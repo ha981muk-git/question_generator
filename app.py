@@ -207,7 +207,6 @@ def generate_question_paper():
         
         # Validate required fields
         if not all([pub, sub, cls, chapters]):
-            # flash('Please fill all required fields: Publication, Subject, Class, and at least one Chapter', 'error')
             return redirect(request.referrer or url_for('index'))
 
         # Step 2: Collect all categories from selected chapters
@@ -216,7 +215,7 @@ def generate_question_paper():
         
         for chapter in chapters:
             chapter_data = data.get(pub, {}).get(sub, {}).get(cls, {}).get(chapter, {})
-            if chapter_data:  # Only include chapters that exist in data
+            if chapter_data:
                 valid_chapters.append(chapter)
                 for qtype in chapter_data.keys():
                     all_categories.add(qtype)
@@ -224,7 +223,6 @@ def generate_question_paper():
                 print(f"Warning: Chapter '{chapter}' not found in data for {pub}/{sub}/{cls}")
 
         if not valid_chapters:
-            # flash('No valid chapters found for the selected criteria', 'error')
             return redirect(request.referrer or url_for('index'))
 
         # Always include Manual Questions
@@ -236,28 +234,31 @@ def generate_question_paper():
         formatted_questions = {}
 
         for qtype in all_categories:
-            # Convert category name to safe form key
             key = qtype.lower().replace(" ", "_")
             question_counts[qtype] = int(request.form.get(f"{key}_count", 0))
-            marks[qtype] = int(request.form.get(f"{key}_mark", 0))
+            # FIXED: Use float instead of int for marks to support decimals
+            marks[qtype] = float(request.form.get(f"{key}_mark", 0))
             formatted_questions[qtype] = []
 
-        # Step 4: Handle manual questions
+        # Step 4: Handle manual questions - FIXED FOR DECIMAL MARKS
         manual_text = request.form.get('manual_questions', '').strip()
-        manual_mark = int(request.form.get('manual_mark', 0))
-        manual_format = request.form.get('manual_output_format', 'original')
+        # FIXED: Use float instead of int for manual marks
+        manual_mark = float(request.form.get('manual_mark', 0))
+        manual_format = request.form.get('manual_output_format', 'numbered')
+        question_type = request.form.get('question_type', 'Write essays on the following').strip()
 
         if manual_text:
-            manual_lines = [line.strip().replace('\r', '') for line in manual_text.split('\n') if line.strip()]
-            
             if manual_format == 'numbered':
-                formatted_questions["Manual Questions"] = [f"{i+1}. {line}" for i, line in enumerate(manual_lines)]
-                question_counts["Manual Questions"] = len(manual_lines)
-            else:
+                # Numbered List: Each line is a separate question
+                manual_lines = [line.strip().replace('\r', '') for line in manual_text.split('\n') if line.strip()]
                 formatted_questions["Manual Questions"] = manual_lines
+                question_counts["Manual Questions"] = len(manual_lines)
+                marks["Manual Questions"] = manual_mark
+            else:
+                # Paragraph Format: Keep the exact input as one question
+                formatted_questions["Manual Questions"] = [manual_text]
                 question_counts["Manual Questions"] = 1
-            
-            marks["Manual Questions"] = manual_mark
+                marks["Manual Questions"] = manual_mark
         else:
             # Remove Manual Questions if no content
             all_categories.discard("Manual Questions")
@@ -279,24 +280,17 @@ def generate_question_paper():
                 
                 for question in questions:
                     if qtype == "Choose the Best Answer":
-                        # Handle MCQ questions - ensure they have proper structure
                         if isinstance(question, dict) and 'question' in question:
-                            # Valid MCQ format
                             chapter_questions[qtype].append({
                                 'question': question['question'],
                                 'options': question.get('options', ['Option A', 'Option B', 'Option C', 'Option D'])
                             })
                         elif isinstance(question, str):
-                            # Convert string to valid MCQ format
                             chapter_questions[qtype].append({
                                 'question': question,
                                 'options': ['Option A', 'Option B', 'Option C', 'Option D']
                             })
-                        else:
-                            # Invalid format, skip
-                            continue
                     else:
-                        # Handle other question types
                         if isinstance(question, dict) and 'question' in question:
                             chapter_questions[qtype].append(question['question'])
                         elif isinstance(question, str):
@@ -363,7 +357,6 @@ def generate_question_paper():
                 fill_questions = [fib_all_questions[i] for i in selected_indices]
                 selected_answers = [fib_all_answers[i] for i in selected_indices]
                 
-                # Create word bank from unique non-empty answers
                 options = list(dict.fromkeys([ans for ans in selected_answers if ans.strip()]))
                 random.shuffle(options)
                 
@@ -374,36 +367,40 @@ def generate_question_paper():
         else:
             options = []
 
-        # Step 9: Calculate total marks and prepare counts
-        total_marks = 0
+        # Step 9: Calculate total marks and prepare counts - FIXED FOR DECIMAL MARKS
+        total_marks = 0.0
         counts = {}
         
         for qtype in formatted_questions:
             count = len(formatted_questions[qtype])
             counts[qtype] = count
+            # FIXED: Use float multiplication for decimal marks
             total_marks += count * marks.get(qtype, 0)
 
         # Step 10: Render template
         return render_template(
             'question_paper.html',
             subject=sub,
-            class_name=cls,  # ✅ Added class_name here
+            class_name=cls,
             questions=formatted_questions,
             marks=marks,
             question_counts=question_counts,
             total_marks=total_marks,
             counts=counts,
             fill_options=options,
-            publication=pub  # Optional: include publication info if needed
+            publication=pub,
+            # Manual questions specific data
+            question_type=question_type,
+            output_format=manual_format,
+            manual_marks=manual_mark
         )
 
     except Exception as e:
         print(f"Error generating question paper: {str(e)}")
         import traceback
-        traceback.print_exc()  # This will show the full traceback
-        # flash(f'Error generating question paper: {str(e)}', 'error')
+        traceback.print_exc()
         return redirect(request.referrer or url_for('index'))
-
+    
 @app.route('/add_question', methods=['GET', 'POST'])
 def add_question():
     data = load_data()
@@ -616,15 +613,30 @@ def get_questions(publication, subject, class_name, chapter):
     chapter_data = data.get(publication, {}).get(subject, {}).get(class_name, {}).get(chapter, {})
     return chapter_data  # returns JSON of all question types
 
-@app.route('/add_info', methods=['GET', 'POST'])
-def add_info():
+@app.route('/add_pulication', methods=['GET', 'POST'])
+def add_pulication():
+    data = load_data()
+    
+    # Extract existing values for dropdowns
+    publications = list(data.keys())
+    subjects = set()
+    classes = set()
+    chapters = set()
+    
+    # Collect all existing subjects, classes, and chapters
+    for pub, pub_data in data.items():
+        for subject, subject_data in pub_data.items():
+            subjects.add(subject)
+            for class_name, class_data in subject_data.items():
+                classes.add(class_name)
+                for chapter in class_data.keys():
+                    chapters.add(chapter)
+    
     if request.method == 'POST':
         publication = request.form['publication']
         subject = request.form['subject']
         class_name = request.form['class_name']
         chapter = request.form['chapter']
-
-        data = load_data()
 
         # Make sure each level is dict
         if publication not in data:
@@ -639,7 +651,11 @@ def add_info():
         save_data(data)
         return redirect(url_for('add_question'))
 
-    return render_template('add_info.html')
+    return render_template('add_pulication.html',
+                         publications=sorted(publications),
+                         subjects=sorted(subjects),
+                         classes=sorted(classes),
+                         chapters=sorted(chapters))
 
 def rename_key_in_json(filename, publication, subject=None, class_name=None, chapter=None,
                        new_publication=None, new_subject=None, new_class=None, new_chapter=None):
