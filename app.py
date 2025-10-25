@@ -193,23 +193,19 @@ def save_question():
 
 #     )
 
-# Generate question paper dynamically
 @app.route('/generate', methods=['POST'])
 def generate_question_paper():
     try:
         data = load_data()
 
-        # Step 1: Get form data with validation
         pub = request.form.get('publication', '').strip()
         sub = request.form.get('subject', '').strip()
         cls = request.form.get('class', '').strip()
         chapters = request.form.getlist('chapters')
         
-        # Validate required fields
         if not all([pub, sub, cls, chapters]):
             return redirect(request.referrer or url_for('index'))
 
-        # Step 2: Collect all categories from selected chapters
         all_categories = set()
         valid_chapters = []
         
@@ -225,51 +221,113 @@ def generate_question_paper():
         if not valid_chapters:
             return redirect(request.referrer or url_for('index'))
 
-        # Always include Manual Questions
         all_categories.add("Manual Questions")
 
-        # Step 3: Build question_counts and marks dictionaries dynamically
         question_counts = {}
         marks = {}
         formatted_questions = {}
 
+        # DEBUG: Print ALL form fields to see what's being submitted
+        print("=== COMPLETE FORM DATA ===")
+        for key, value in request.form.items():
+            print(f"Field: '{key}' = '{value}'")
+        print("==========================")
+
+        # Process each question type with enhanced debugging
         for qtype in all_categories:
+            # Create the key exactly as it should appear in the form
             key = qtype.lower().replace(" ", "_")
-            question_counts[qtype] = int(request.form.get(f"{key}_count", 0))
-            # FIXED: Use float instead of int for marks to support decimals
-            marks[qtype] = float(request.form.get(f"{key}_mark", 0))
+            
+            # Get count and mark values
+            count_field = f"{key}_count"
+            mark_field = f"{key}_mark"
+            
+            count_value = request.form.get(count_field, "0")
+            mark_value = request.form.get(mark_field, "")
+            
+            print(f"Looking for {qtype}:")
+            print(f"  Count field: '{count_field}' = '{count_value}'")
+            print(f"  Mark field: '{mark_field}' = '{mark_value}'")
+            
+            # Convert count to integer
+            try:
+                question_counts[qtype] = int(count_value)
+            except ValueError:
+                question_counts[qtype] = 0
+                print(f"  Invalid count value, using 0")
+            
+            # Convert mark to float
+            if mark_value and mark_value.strip():
+                try:
+                    marks[qtype] = float(mark_value)
+                    print(f"  ✓ Mark value found: {marks[qtype]}")
+                except ValueError:
+                    marks[qtype] = 1.0
+                    print(f"  ✗ Invalid mark value, using default 1.0")
+            else:
+                marks[qtype] = 1.0
+                print(f"  ✗ No mark value found, using default 1.0")
+                
             formatted_questions[qtype] = []
 
-        # Step 4: Handle manual questions - FIXED FOR DECIMAL MARKS
+        # MANUAL OVERRIDE: If specific types are missing marks, set them manually
+        problematic_types = ["Choose the Best Answer", "Answer the Following"]
+        for ptype in problematic_types:
+            if ptype in all_categories:
+                # Try alternative field names
+                alt_keys = [
+                    ptype.lower().replace(" ", "_"),
+                    ptype.lower().replace("the ", "").replace(" ", "_"),  # "choose_best_answer"
+                    ptype.lower().replace(" ", "_").replace("the_", ""),  # "choose_best_answer"
+                    "choose_best_answer",  # Direct match
+                    "answer_following"     # Direct match
+                ]
+                
+                for alt_key in alt_keys:
+                    alt_mark_field = f"{alt_key}_mark"
+                    alt_value = request.form.get(alt_mark_field)
+                    if alt_value:
+                        print(f"Found alternative mark for {ptype}: {alt_key}_mark = {alt_value}")
+                        try:
+                            marks[ptype] = float(alt_value)
+                            break
+                        except ValueError:
+                            continue
+
+        print(f"FINAL MARKS DICTIONARY: {marks}")
+
+        # Manual questions handling
         manual_text = request.form.get('manual_questions', '').strip()
-        # FIXED: Use float instead of int for manual marks
-        manual_mark = float(request.form.get('manual_mark', 0))
+        manual_mark_value = request.form.get('manual_mark', "5.0")
+        try:
+            manual_mark = float(manual_mark_value)
+        except ValueError:
+            manual_mark = 5.0
+            
         manual_format = request.form.get('manual_output_format', 'numbered')
         question_type = request.form.get('question_type', 'Write essays on the following').strip()
 
         if manual_text:
             if manual_format == 'numbered':
-                # Numbered List: Each line is a separate question
                 manual_lines = [line.strip().replace('\r', '') for line in manual_text.split('\n') if line.strip()]
                 formatted_questions["Manual Questions"] = manual_lines
                 question_counts["Manual Questions"] = len(manual_lines)
                 marks["Manual Questions"] = manual_mark
             else:
-                # Paragraph Format: Keep the exact input as one question
                 formatted_questions["Manual Questions"] = [manual_text]
                 question_counts["Manual Questions"] = 1
                 marks["Manual Questions"] = manual_mark
         else:
-            # Remove Manual Questions if no content
             all_categories.discard("Manual Questions")
             question_counts.pop("Manual Questions", None)
             marks.pop("Manual Questions", None)
             formatted_questions.pop("Manual Questions", None)
 
-        # Step 5: Collect questions from valid chapters with proper formatting
+        # ... rest of your question collection code remains the same ...
+
         chapter_questions = {}
         for qtype in all_categories:
-            if qtype in ["Match the Following", "Manual Questions"]:
+            if qtype in ["Match the Following", "Manual Questions", "Full Form"]:
                 continue
                 
             chapter_questions[qtype] = []
@@ -296,9 +354,29 @@ def generate_question_paper():
                         elif isinstance(question, str):
                             chapter_questions[qtype].append(question)
 
-        # Step 6: Random sample for normal categories
+        # Full Form handling
+        if "Full Form" in all_categories:
+            full_form_items = []
+            
+            for chapter in valid_chapters:
+                chapter_data = data.get(pub, {}).get(sub, {}).get(cls, {}).get(chapter, {})
+                full_form_data = chapter_data.get("Full Form", [])
+                
+                for item in full_form_data:
+                    if isinstance(item, dict):
+                        for abbr, full_form in item.items():
+                            full_form_items.append(abbr)
+                    elif isinstance(item, str):
+                        full_form_items.append(item)
+
+            full_form_count = question_counts.get("Full Form", 0)
+            if full_form_items and full_form_count > 0:
+                formatted_questions["Full Form"] = random.sample(full_form_items, min(full_form_count, len(full_form_items)))
+            else:
+                formatted_questions["Full Form"] = []
+
         for qtype in all_categories:
-            if qtype in ["Match the Following", "Manual Questions"]:
+            if qtype in ["Match the Following", "Manual Questions", "Full Form"]:
                 continue
                 
             all_available = chapter_questions.get(qtype, [])
@@ -310,7 +388,6 @@ def generate_question_paper():
             else:
                 formatted_questions[qtype] = []
 
-        # Step 7: Special handling for Match the Following
         if "Match the Following" in all_categories:
             match_pairs = []
             
@@ -333,7 +410,6 @@ def generate_question_paper():
             else:
                 formatted_questions["Match the Following"] = []
 
-        # Step 8: Handle Fill in the Blanks with word bank
         if "Fill in the Blanks" in all_categories:
             fib_all_questions = []
             fib_all_answers = []
@@ -367,17 +443,14 @@ def generate_question_paper():
         else:
             options = []
 
-        # Step 9: Calculate total marks and prepare counts - FIXED FOR DECIMAL MARKS
         total_marks = 0.0
         counts = {}
         
         for qtype in formatted_questions:
             count = len(formatted_questions[qtype])
             counts[qtype] = count
-            # FIXED: Use float multiplication for decimal marks
             total_marks += count * marks.get(qtype, 0)
 
-        # Step 10: Render template
         return render_template(
             'question_paper.html',
             subject=sub,
@@ -389,7 +462,6 @@ def generate_question_paper():
             counts=counts,
             fill_options=options,
             publication=pub,
-            # Manual questions specific data
             question_type=question_type,
             output_format=manual_format,
             manual_marks=manual_mark
@@ -547,10 +619,31 @@ def add_question():
                                         selected_qtype=selected_qtype,
                                         data=data)
 
+            elif qtype == "One Word Answer":
+                # Handle One Word Answer type
+                question_text = request.form.get("normal_question", "").strip()
+                answer_text = request.form.get("one_word_answer", "").strip()
+                
+                if question_text and answer_text:
+                    new_question = {"question": question_text, "answer": answer_text}
+                    data[publication][subject][class_name][chapter][qtype].append(new_question)
+                    success_message = f"One Word Answer question added: {question_text}"
+                else:
+                    # flash('Both question and answer are required for One Word Answer!', 'error')
+                    return render_template('add_question.html', 
+                                        publications=publications,
+                                        selected_pub=selected_pub,
+                                        selected_sub=selected_sub,
+                                        selected_cls=selected_cls,
+                                        selected_chapter=selected_chapter,
+                                        selected_qtype=selected_qtype,
+                                        data=data)
+
             else:
-                # Handle other question types (Answer the Following, etc.)
+                # Handle other question types (Answer the Following, Short Answer, Long Answer, etc.)
                 question_text = request.form.get("normal_question", "").strip()
                 if question_text:
+                    # For question types without separate answer field, store as simple strings
                     lines = [line.strip() for line in question_text.split('\n') if line.strip()]
                     data[publication][subject][class_name][chapter][qtype].extend(lines)
                     success_message = f"{qtype} question(s) added successfully!"
@@ -717,44 +810,60 @@ def rename_page():
 @app.route('/rename_question', methods=['GET', 'POST'])
 def rename_question():
     if request.method == 'POST':
-        publication = request.form['publication']
-        subject = request.form['subject']
-        class_name = request.form['class_name']
-        chapter = request.form['chapter']
-        qtype = request.form['qtype']
-        old_index = int(request.form['old_question'])
+        try:
+            publication = request.form['publication']
+            subject = request.form['subject']
+            class_name = request.form['class_name']
+            chapter = request.form['chapter']
+            qtype = request.form['qtype']
+            old_index = int(request.form['old_question_index'])
 
-        with open('data.json', 'r', encoding='utf-8') as f:
-            data = json.load(f)
+            with open('data.json', 'r', encoding='utf-8') as f:
+                data = json.load(f)
 
-        qlist = data[publication][subject][class_name][chapter][qtype]
+            qlist = data[publication][subject][class_name][chapter][qtype]
 
-        if qtype in ["Fill in the Blanks", "True/False", "Answer the Following", "Manual Questions"]:
-            qlist[old_index]['question'] = request.form['question_fill_blank']
-            qlist[old_index]['answer'] = request.form['answer_fill_blank']
-        elif qtype == "Match the Following":
-            left = request.form['match_left']
-            right = request.form['match_right']
-            qlist[old_index] = {left: right}
-        elif qtype == "Choose the Best Answer":
-            qlist[old_index]['question'] = request.form['question_mcq']
-            qlist[old_index]['options'] = [
-                request.form.get('option1', ''),
-                request.form.get('option2', ''),
-                request.form.get('option3', ''),
-                request.form.get('option4', '')
-            ]
-            qlist[old_index]['answer'] = request.form['answer_mcq']
-        elif qtype == "Full Form":
-            abbr = request.form['abbr']
-            full = request.form['full_form']
-            qlist[old_index] = {abbr: full}
+            # Handle different question types
+            if qtype in ["Fill in the Blanks", "True/False", "One Word Answer"]:
+                qlist[old_index]['question'] = request.form['question_text']
+                qlist[old_index]['answer'] = request.form['answer_text']
+                
+            elif qtype in ["Answer the Following", "Short Answer", "Long Answer"]:
+                qlist[old_index] = request.form['simple_question']
+                
+            elif qtype == "Match the Following":
+                left = request.form['match_left']
+                right = request.form['match_right']
+                qlist[old_index] = {left: right}
+                
+            elif qtype == "Choose the Best Answer":
+                qlist[old_index]['question'] = request.form['question_mcq']
+                qlist[old_index]['options'] = [
+                    request.form.get('option1', ''),
+                    request.form.get('option2', ''),
+                    request.form.get('option3', ''),
+                    request.form.get('option4', '')
+                ]
+                qlist[old_index]['answer'] = request.form['answer_mcq']
+                
+            elif qtype == "Full Form":
+                abbr = request.form['abbr']
+                full = request.form['full_form']
+                qlist[old_index] = {abbr: full}
 
-        with open('data.json', 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+            with open('data.json', 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=4, ensure_ascii=False)
 
-        # Just redirect without flash message
-        return redirect(url_for('rename_question'))
+            # Flash success message (uncomment if you want messages)
+            # flash('Question updated successfully!', 'success')
+            return redirect(url_for('rename_question'))
+
+        except KeyError as e:
+            # flash(f'Error: Missing field - {e}', 'error')
+            return redirect(url_for('rename_question'))
+        except Exception as e:
+            # flash(f'Error updating question: {str(e)}', 'error')
+            return redirect(url_for('rename_question'))
 
     data = load_data()
     return render_template('rename_question.html', data=data)
@@ -762,44 +871,40 @@ def rename_question():
 
 @app.route('/delete_question', methods=['GET', 'POST'])
 def delete_question():
-    data = load_data()  # Load JSON
+    data = load_data()
 
     if request.method == 'POST':
-        publication = request.form['publication']
-        subject = request.form['subject']
-        class_name = request.form['class_name']
-        chapter = request.form['chapter']
-        qtype = request.form['qtype']
-        old_question = request.form['old_question']
-
         try:
-            if qtype in ["Fill in the Blanks", "True/False", "Answer the Following", "Manual Questions", "Full Form"]:
-                if old_question in data[publication][subject][class_name][chapter][qtype]:
-                    data[publication][subject][class_name][chapter][qtype].remove(old_question)
+            publication = request.form['publication']
+            subject = request.form['subject']
+            class_name = request.form['class_name']
+            chapter = request.form['chapter']
+            qtype = request.form['qtype']
+            question_index = int(request.form['question_index'])  # Individual question index
 
-            elif qtype == "Match the Following":
-                match_list = data[publication][subject][class_name][chapter][qtype]
-                for pair in match_list:
-                    if old_question in pair.keys():
-                        match_list.remove(pair)
-                        break
+            # Get the specific question list
+            qlist = data[publication][subject][class_name][chapter][qtype]
 
-            elif qtype == "Choose the Best Answer":
-                mcq_list = data[publication][subject][class_name][chapter][qtype]
-                for mcq in mcq_list:
-                    if mcq["question"] == old_question:
-                        mcq_list.remove(mcq)
-                        break
+            # Remove the individual question by its index
+            if 0 <= question_index < len(qlist):
+                deleted_question = qlist.pop(question_index)
+                save_data(data)
+                # flash('Individual question deleted successfully!', 'success')
+            else:
+                # flash('Question not found!', 'error')
+                pass
 
-            save_data(data)
             return redirect(url_for('delete_question'))
 
         except Exception as e:
-            return f"❌ Error: {e}"
+            # flash(f'Error deleting question: {str(e)}', 'error')
+            return redirect(url_for('delete_question'))
 
-    # ⬇️ This part runs only when method == GET
+    # GET request
     publications = list(data.keys())
-    return render_template("delete_question.html",data=data,publications=publications)
+    return render_template("delete_question.html", data=data, publications=publications)
+
+
 
 @app.route('/delete', methods=['GET', 'POST'])
 def delete_page():

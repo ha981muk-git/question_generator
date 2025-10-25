@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Rename Question{% endblock %}
+{% block title %}Edit Question{% endblock %}
 
 {% block content %}
 <div class="px-4 sm:px-0 max-w-4xl mx-auto">
@@ -13,7 +13,7 @@
                 </svg>
             </div>
             <div>
-                <h1 class="text-3xl font-bold text-gray-900">Rename Question</h1>
+                <h1 class="text-3xl font-bold text-gray-900">Edit Question</h1>
                 <p class="text-gray-600 mt-1">Edit and update existing questions in your database</p>
             </div>
         </div>
@@ -22,6 +22,8 @@
     <!-- Main Form Card -->
     <div class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
         <form method="POST" action="{{ url_for('rename_question') }}" class="p-8">
+            <!-- Hidden field to store old question index -->
+            <input type="hidden" name="old_question_index" id="old_question_index" value="">
             
             <!-- Selection Section -->
             <div class="mb-8">
@@ -36,9 +38,6 @@
                     <!-- Publication -->
                     <div class="space-y-2">
                         <label class="block text-sm font-semibold text-gray-700">
-                            <svg class="w-4 h-4 inline mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 011 1l4 4v9a2 2 0 01-2 2z"></path>
-                            </svg>
                             Publication
                         </label>
                         <select name="publication" id="pub" onchange="loadSubjects()" required 
@@ -49,9 +48,6 @@
                     <!-- Subject -->
                     <div class="space-y-2">
                         <label class="block text-sm font-semibold text-gray-700">
-                            <svg class="w-4 h-4 inline mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                            </svg>
                             Subject
                         </label>
                         <select name="subject" id="sub" onchange="loadClasses()" required 
@@ -62,9 +58,6 @@
                     <!-- Class -->
                     <div class="space-y-2">
                         <label class="block text-sm font-semibold text-gray-700">
-                            <svg class="w-4 h-4 inline mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                            </svg>
                             Class
                         </label>
                         <select name="class_name" id="cls" onchange="loadChapters()" required 
@@ -75,9 +68,6 @@
                     <!-- Chapter -->
                     <div class="space-y-2">
                         <label class="block text-sm font-semibold text-gray-700">
-                            <svg class="w-4 h-4 inline mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
                             Chapter
                         </label>
                         <select name="chapter" id="chap" onchange="loadQtypes()" required 
@@ -89,9 +79,6 @@
                 <!-- Question Type (Full Width) -->
                 <div class="mt-6 space-y-2">
                     <label class="block text-sm font-semibold text-gray-700">
-                        <svg class="w-4 h-4 inline mr-2 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
-                        </svg>
                         Question Type
                     </label>
                     <select name="qtype" id="qtype" onchange="loadQuestions()" required 
@@ -102,9 +89,6 @@
                 <!-- Old Question Selection (Full Width) -->
                 <div class="mt-6 space-y-2">
                     <label class="block text-sm font-semibold text-gray-700">
-                        <svg class="w-4 h-4 inline mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
                         Select Question to Edit
                     </label>
                     <select name="old_question" id="old_q" onchange="fillOldQuestion()" required 
@@ -116,38 +100,47 @@
             <!-- Dynamic Edit Fields -->
             <div class="space-y-6">
                 
-                <!-- Fill in the Blanks, True/False, Answer, Manual Questions -->
-                <div id="field_fill_blank" style="display:none;" class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200 space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
-                        </svg>
-                        Edit Question
+                <!-- Fill in the Blanks, True/False, One Word Answer -->
+                <div id="field_with_answer" style="display:none;" class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200 space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                        Edit Question with Answer
                     </h3>
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-3">
-                            Question (use ___ for blank)
+                            Question
                         </label>
-                        <textarea name="question_fill_blank" id="question_fill_blank" rows="4" 
-                                  placeholder="Write question with blanks..."
+                        <textarea name="question_text" id="question_text" rows="4" 
+                                  placeholder="Enter your question..."
                                   class="w-full px-4 py-3 border border-blue-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-y shadow-sm"></textarea>
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-3">
                             Correct Answer
                         </label>
-                        <input type="text" name="answer_fill_blank" id="answer_fill_blank" 
+                        <input type="text" name="answer_text" id="answer_text" 
                                placeholder="Enter correct answer"
                                class="w-full px-4 py-3 border border-blue-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 shadow-sm">
                     </div>
                 </div>
 
+                <!-- Answer the Following, Short Answer, Long Answer -->
+                <div id="field_simple_question" style="display:none;" class="bg-gradient-to-r from-gray-50 to-slate-50 rounded-xl p-6 border border-gray-200 space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                        Edit Question
+                    </h3>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-3">
+                            Question
+                        </label>
+                        <textarea name="simple_question" id="simple_question" rows="4" 
+                                  placeholder="Enter your question..."
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all duration-200 resize-y shadow-sm"></textarea>
+                    </div>
+                </div>
+
                 <!-- Match the Following -->
                 <div id="field_match_following" style="display:none;" class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-200 space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
-                        </svg>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
                         Edit Match Pair
                     </h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -172,10 +165,7 @@
 
                 <!-- Choose the Best Answer -->
                 <div id="field_choose_best_answer" style="display:none;" class="bg-gradient-to-r from-green-50 to-teal-50 rounded-xl p-6 border border-green-200 space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
-                        </svg>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
                         Edit Multiple Choice Question
                     </h3>
                     <div>
@@ -190,13 +180,13 @@
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-3">Options</label>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="text" name="option1" placeholder="Option A" 
+                            <input type="text" name="option1" id="option1" placeholder="Option A" 
                                    class="w-full px-4 py-3 border border-green-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 shadow-sm">
-                            <input type="text" name="option2" placeholder="Option B" 
+                            <input type="text" name="option2" id="option2" placeholder="Option B" 
                                    class="w-full px-4 py-3 border border-green-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 shadow-sm">
-                            <input type="text" name="option3" placeholder="Option C" 
+                            <input type="text" name="option3" id="option3" placeholder="Option C" 
                                    class="w-full px-4 py-3 border border-green-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 shadow-sm">
-                            <input type="text" name="option4" placeholder="Option D" 
+                            <input type="text" name="option4" id="option4" placeholder="Option D" 
                                    class="w-full px-4 py-3 border border-green-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 shadow-sm">
                         </div>
                     </div>
@@ -206,17 +196,14 @@
                             Correct Answer
                         </label>
                         <input type="text" name="answer_mcq" id="answer_mcq" 
-                               placeholder="Enter correct option"
+                               placeholder="Enter correct option (A, B, C, or D)"
                                class="w-full px-4 py-3 border border-green-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 shadow-sm">
                     </div>
                 </div>
 
                 <!-- Full Form -->
                 <div id="field_full_form" style="display:none;" class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200 space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                        <svg class="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                        </svg>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
                         Edit Full Form
                     </h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -248,14 +235,10 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                     Update Question
-                    <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-200"></div>
                 </button>
                 
                 <a href="/" 
                    class="inline-flex items-center justify-center px-6 py-4 text-lg font-medium text-gray-700 bg-white border-2 border-gray-300 rounded-xl hover:border-amber-500 hover:text-amber-600 hover:bg-amber-50 transition-all duration-200 shadow-sm hover:shadow-md">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
                     Cancel
                 </a>
             </div>
@@ -282,7 +265,7 @@
   }
 
   function hideAllFields() {
-    const fields = ['field_fill_blank', 'field_match_following', 'field_choose_best_answer', 'field_full_form'];
+    const fields = ['field_with_answer', 'field_simple_question', 'field_match_following', 'field_choose_best_answer', 'field_full_form'];
     fields.forEach(id => document.getElementById(id).style.display = 'none');
   }
 
@@ -340,9 +323,15 @@
     if(type && data[pub][sub][cls][chap][type]){
       const qlist = data[pub][sub][cls][chap][type];
 
-      if(["Fill in the Blanks","True/False","Answer the Following","Manual Questions"].includes(type)){
+      // Question types with both question and answer fields
+      if(["Fill in the Blanks", "True/False", "One Word Answer"].includes(type)){
         list = qlist.map((q,i) => ({ idx: i, display: q.question }));
-        showField('field_fill_blank');
+        showField('field_with_answer');
+      }
+      // Question types with only question field (simple strings)
+      else if(["Answer the Following", "Short Answer", "Long Answer"].includes(type)){
+        list = qlist.map((q,i) => ({ idx: i, display: q }));
+        showField('field_simple_question');
       }
       else if(type === "Match the Following"){
         list = qlist.map((pair,i) => {
@@ -388,15 +377,24 @@
       return;
     }
 
+    // Store the old index in hidden field
+    document.getElementById('old_question_index').value = old_idx;
+
     const qlist = data[pub][sub][cls][chap][qtype];
     const qdata = qlist[old_idx];
 
     console.log("Editing question data:", qdata);
     
-    if(["Fill in the Blanks","True/False","Answer the Following","Manual Questions"].includes(qtype)){
-      showField('field_fill_blank');
-      document.getElementById('question_fill_blank').value = qdata.question || '';
-      document.getElementById('answer_fill_blank').value = qdata.answer || '';
+    // Question types with both question and answer
+    if(["Fill in the Blanks", "True/False", "One Word Answer"].includes(qtype)){
+      showField('field_with_answer');
+      document.getElementById('question_text').value = qdata.question || '';
+      document.getElementById('answer_text').value = qdata.answer || '';
+    }
+    // Simple question types (just strings)
+    else if(["Answer the Following", "Short Answer", "Long Answer"].includes(qtype)){
+      showField('field_simple_question');
+      document.getElementById('simple_question').value = qdata || '';
     }
     else if(qtype === "Match the Following"){
       showField('field_match_following');
@@ -407,10 +405,10 @@
     else if(qtype === "Choose the Best Answer"){
       showField('field_choose_best_answer');
       document.getElementById('question_mcq').value = qdata.question || '';
-      document.querySelector('input[name="option1"]').value = qdata.options ? qdata.options[0] : '';
-      document.querySelector('input[name="option2"]').value = qdata.options ? qdata.options[1] : '';
-      document.querySelector('input[name="option3"]').value = qdata.options ? qdata.options[2] : '';
-      document.querySelector('input[name="option4"]').value = qdata.options ? qdata.options[3] : '';
+      document.getElementById('option1').value = qdata.options ? qdata.options[0] : '';
+      document.getElementById('option2').value = qdata.options ? qdata.options[1] : '';
+      document.getElementById('option3').value = qdata.options ? qdata.options[2] : '';
+      document.getElementById('option4').value = qdata.options ? qdata.options[3] : '';
       document.getElementById('answer_mcq').value = qdata.answer || '';
     }
     else if(qtype === "Full Form"){
@@ -425,7 +423,6 @@
   fillSelect('pub', Object.keys(data));
 </script>
 
-<!-- Enhanced Styles -->
 <style>
     input[type="text"]:focus,
     textarea:focus,
@@ -438,12 +435,6 @@
     textarea,
     select {
         transition: all 0.2s ease;
-    }
-    
-    input[type="text"]::placeholder,
-    textarea::placeholder {
-        color: #9CA3AF;
-        opacity: 1;
     }
 </style>
 

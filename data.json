@@ -1,824 +1,3408 @@
 {
-    "swastik books pvt. ltd.": {
-        "Computer": {
-            "class 7": {
-                "chapter 8": {
+    "united pvt.ltd": {
+        "Science": {
+            "class 1": {
+                "Chapter 1: About Me - My Body": {
                     "Fill in the Blanks": [
-                        "The full form of HTTP is __________.",
-                        "A website is a collection of __________.",
-                        "To open a website, we need its __________ address.",
-                        "Social media platforms like Facebook and Instagram are part of __________.",
-                        "An __________ connection is required to access the Internet.",
-                        "pppppppppppppppppppp",
-                        "mmmmmm",
-                        "[[[[[[[[[",
-                        "jkgfv.................",
-                        "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
-                        "bibhuti is a ......... person",
-                        "boy are .............?",
-                        "';ojpoi"
+                        {
+                            "question": "We have ______ sense organs.",
+                            "answer": "five"
+                        },
+                        {
+                            "question": "We use our ______ to see.",
+                            "answer": "eyes"
+                        },
+                        {
+                            "question": "We have ______ fingers on one hand.",
+                            "answer": "five"
+                        },
+                        {
+                            "question": "We taste food with our ______.",
+                            "answer": "tongue"
+                        },
+                        {
+                            "question": "We have two ______ to walk.",
+                            "answer": "legs"
+                        }
                     ],
                     "True/False": [
-                        "The full form of URL is Uniform Resource Locator.",
-                        "You do not need the Internet to watch YouTube videos.",
-                        "Websites are made up of web pages.",
-                        "Email stands for Electronic Mail.",
-                        "Internet cannot be used for online learning.",
-                        "fdgvdagv",
-                        "rthrtfghrtf",
-                        "oioioioioioioioioioioioioioioioio",
-                        "kjgvfuhl"
-                    ],
-                    "Answer the Following": [
-                        "what is comuter",
-                        "WHAT IS BIBHUTI",
-                        "what is hello",
-                        "what is research",
-                        "what is wow"
-                    ],
-                    "Choose the Best Answer": [
                         {
-                            "question": "pppppppppppppp",
-                            "options": [
-                                "programmer",
-                                "teacher",
-                                "a and b",
-                                "none of thees"
-                            ],
-                            "answer": "a and b"
+                            "question": "We have one nose.",
+                            "answer": "True"
                         },
                         {
-                            "question": "ppppppppppppp",
-                            "options": [
-                                "programmer",
-                                "teacher",
-                                "a and b",
-                                "none of thees"
-                            ],
-                            "answer": "a and b"
+                            "question": "We hear with our eyes.",
+                            "answer": "False"
                         },
                         {
-                            "question": "who is bhushan",
-                            "options": [
-                                "lsdfk",
-                                "teacher",
-                                "a and b",
-                                "none of thees"
-                            ],
-                            "answer": "a and b"
+                            "question": "We use our hands to write.",
+                            "answer": "True"
                         },
                         {
-                            "question": ";;;;;;;;;;;;;;;;;;;",
-                            "options": [
-                                "programmer",
-                                "teacher",
-                                "a and b",
-                                "none of thees"
-                            ],
-                            "answer": "a and b"
+                            "question": "Our skin helps us to feel.",
+                            "answer": "True"
                         },
                         {
-                            "question": "===============",
-                            "options": [
-                                "programmer",
-                                "teacher",
-                                "a and b",
-                                "none of thees"
-                            ],
-                            "answer": "a and b"
-                        },
-                        {
-                            "question": "n nnnnnnnnnnnn",
-                            "options": [
-                                "programmer",
-                                "teacher",
-                                "a and b",
-                                "none of thees"
-                            ],
-                            "answer": "a and b"
-                        },
-                        {
-                            "question": "aaaaaaaaa",
-                            "options": [
-                                "programmer",
-                                "teacher",
-                                "a and b",
-                                "none of thees"
-                            ],
-                            "answer": "a and b"
-                        },
-                        {
-                            "question": "klugiulgbuiyh",
-                            "options": [
-                                "programmer",
-                                "teacher",
-                                "a and b",
-                                "none of thees"
-                            ],
-                            "answer": "a and b"
-                        },
-                        {
-                            "question": "bbbbbbb",
-                            "options": [
-                                "a",
-                                "b",
-                                "c",
-                                "d"
-                            ],
-                            "answer": "a"
-                        },
-                        {
-                            "question": "hello ................",
-                            "options": [
-                                "a",
-                                "b",
-                                "c",
-                                "d"
-                            ],
-                            "answer": "a"
-                        },
-                        {
-                            "question": "bhushan ............",
-                            "options": [
-                                "mukhiya",
-                                "sah",
-                                "yadav",
-                                "ray"
-                            ],
-                            "answer": "mukhiya"
-                        },
-                        {
-                            "question": "nnnnnnnnnnnnnnnn",
-                            "options": [
-                                "programmer",
-                                "teacher",
-                                "yadav",
-                                "ray"
-                            ],
-                            "answer": "APPLE"
-                        },
-                        {
-                            "question": "how......you?",
-                            "options": [
-                                "is",
-                                "are",
-                                "am",
-                                "were"
-                            ],
-                            "answer": "are"
+                            "question": "We have ten toes.",
+                            "answer": "True"
                         }
-                    ]
-                }
-            }
-        }
-    },
-    "systematic": {
-        "Science": {
-            "Class 3": {
-                "Chapter 1": {
-                    "Fill in the Blanks": [
-                        "how to plants make their food?",
-                        "Animals breathe using ____.",
-                        "The sun gives us ____ and heat.",
-                        "Water is important for ____.",
-                        "Leaves help plants to ____."
                     ],
                     "Match the Following": [
                         {
-                            "match a": "match a"
+                            "Eyes": "See"
                         },
                         {
-                            "Animals": "Breathe air"
+                            "Ears": "Hear"
                         },
                         {
-                            "Sun": "Gives light"
+                            "Nose": "Smell"
                         },
                         {
-                            "Water": "Needed by all"
+                            "Skin": "Touch"
                         },
                         {
-                            "Leaves": "Help plants breathe"
+                            "Tongue": "Taste"
                         }
-                    ],
-                    "Answer the Following": [
-                        "answer",
-                        "How do animals breathe?",
-                        "What does the sun provide?",
-                        "Why is soil important?",
-                        "How do leaves help plants?"
                     ],
                     "Choose the Best Answer": [
                         {
-                            "question": "what do plants need to make food",
+                            "question": "Which part do we use to smell a flower?",
                             "options": [
-                                "a",
-                                "b",
-                                "c",
-                                "d"
-                            ],
-                            "answer": "e"
-                        },
-                        {
-                            "question": "What helps animals to breathe? ok",
-                            "options": [
+                                "Eyes",
                                 "Nose",
-                                "Skin",
-                                "Lungs",
-                                "Legs"
+                                "Ears",
+                                "Tongue"
                             ],
-                            "answer": "Lungs"
+                            "answer": "Nose"
                         },
                         {
-                            "question": "What gives us light and heat?",
+                            "question": "How many eyes do we have?",
                             "options": [
-                                "Sun",
-                                "Moon",
-                                "Stars",
+                                "One",
+                                "Three",
+                                "Two",
+                                "Four"
+                            ],
+                            "answer": "Two"
+                        },
+                        {
+                            "question": "Which sense organ helps us to listen to music?",
+                            "options": [
+                                "Eyes",
+                                "Nose",
+                                "Ears",
+                                "Tongue"
+                            ],
+                            "answer": "Ears"
+                        },
+                        {
+                            "question": "We can feel if something is hot or cold with our...",
+                            "options": [
+                                "Tongue",
+                                "Skin",
+                                "Eyes",
+                                "Nose"
+                            ],
+                            "answer": "Skin"
+                        },
+                        {
+                            "question": "Which part helps us to know if food is sweet or salty?",
+                            "options": [
+                                "Ears",
+                                "Eyes",
+                                "Tongue",
+                                "Nose"
+                            ],
+                            "answer": "Tongue"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "Name any two parts of your body.",
+                        "What do you use to see a beautiful picture?",
+                        "How many sense organs do we have?",
+                        "Name the sense organ that helps you feel the softness of a teddy bear.",
+                        "What do you use to hear the bell ring?"
+                    ]
+                },
+                "Chapter 2: The Food We Eat": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "We get milk from ______.",
+                            "answer": "animals"
+                        },
+                        {
+                            "question": "______ gives us energy to play.",
+                            "answer": "Food"
+                        },
+                        {
+                            "question": "We should drink plenty of ______.",
+                            "answer": "water"
+                        },
+                        {
+                            "question": "Fruits and ______ are good for our health.",
+                            "answer": "vegetables"
+                        },
+                        {
+                            "question": "We eat ______ meals in a day.",
+                            "answer": "three"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "We should eat only chocolates.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Apples and bananas are fruits.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We should wash our hands before eating.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Food helps us to grow.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We should waste food.",
+                            "answer": "False"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Rice": "Grain"
+                        },
+                        {
+                            "Apple": "Fruit"
+                        },
+                        {
+                            "Carrot": "Vegetable"
+                        },
+                        {
+                            "Milk": "Drink"
+                        },
+                        {
+                            "Egg": "Protein"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which food is good for our health?",
+                            "options": [
+                                "Chips",
+                                "Fruits",
+                                "Cold Drink",
+                                "Candy"
+                            ],
+                            "answer": "Fruits"
+                        },
+                        {
+                            "question": "Which of these comes from a plant?",
+                            "options": [
+                                "Milk",
+                                "Egg",
+                                "Bread",
+                                "Chicken"
+                            ],
+                            "answer": "Bread"
+                        },
+                        {
+                            "question": "We should drink this every day.",
+                            "options": [
+                                "Juice",
+                                "Tea",
+                                "Water",
+                                "Cold Drink"
+                            ],
+                            "answer": "Water"
+                        },
+                        {
+                            "question": "Which of these helps us grow strong?",
+                            "options": [
+                                "Chocolate",
+                                "Milk",
+                                "Cake",
+                                "Chips"
+                            ],
+                            "answer": "Milk"
+                        },
+                        {
+                            "question": "Which meal do we eat in the morning?",
+                            "options": [
+                                "Lunch",
+                                "Dinner",
+                                "Breakfast",
+                                "Snack"
+                            ],
+                            "answer": "Breakfast"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "Name one fruit that you like to eat.",
+                        "Why do we need food?",
+                        "Name one food that comes from an animal.",
+                        "What should you do before eating your food?",
+                        "Why should we not waste food?"
+                    ]
+                },
+                "Chapter 3: Our Family and Home": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "A family lives together in a ______.",
+                            "answer": "home"
+                        },
+                        {
+                            "question": "Parents and children make a ______ family.",
+                            "answer": "nuclear"
+                        },
+                        {
+                            "question": "We should keep our home ______.",
+                            "answer": "clean"
+                        },
+                        {
+                            "question": "We help each other in a ______.",
+                            "answer": "family"
+                        },
+                        {
+                            "question": "Grandparents are our ______ best friends.",
+                            "answer": "family's"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "We should not help our parents.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A home can be made of bricks.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We should throw garbage on the floor.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We share our toys with our brothers and sisters.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A joint family has many members.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Father's father": "Grandfather"
+                        },
+                        {
+                            "Mother's sister": "Aunt"
+                        },
+                        {
+                            "Your brother's sister": "You"
+                        },
+                        {
+                            "Father's brother": "Uncle"
+                        },
+                        {
+                            "Keeps us safe": "Home"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Who takes care of you at home?",
+                            "options": [
+                                "Teacher",
+                                "Pilot",
+                                "Family",
+                                "Doctor"
+                            ],
+                            "answer": "Family"
+                        },
+                        {
+                            "question": "What do we call our father's mother?",
+                            "options": [
+                                "Sister",
+                                "Aunt",
+                                "Grandmother",
+                                "Mother"
+                            ],
+                            "answer": "Grandmother"
+                        },
+                        {
+                            "question": "Where should we throw waste paper?",
+                            "options": [
+                                "On the floor",
+                                "Out the window",
+                                "In the dustbin",
+                                "On the bed"
+                            ],
+                            "answer": "In the dustbin"
+                        },
+                        {
+                            "question": "What is a house made of?",
+                            "options": [
+                                "Water",
+                                "Bricks",
+                                "Air",
                                 "Fire"
                             ],
-                            "answer": "Sun"
+                            "answer": "Bricks"
                         },
                         {
-                            "question": "What do leaves help in?",
+                            "question": "Who helps you with your homework?",
                             "options": [
-                                "Flying",
-                                "Breathing",
-                                "Eating",
-                                "Sleeping"
+                                "Family",
+                                "Shopkeeper",
+                                "Driver",
+                                "Farmer"
                             ],
-                            "answer": "Breathing"
-                        },
-                        {
-                            "question": "Why is water important?",
-                            "options": [
-                                "For fun",
-                                "For life",
-                                "For music",
-                                "For running"
-                            ],
-                            "answer": "For life"
-                        }
-                    ]
-                },
-                "Chapter 2": {
-                    "Fill in the Blanks": [
-                        "The heart pumps ____ around the body.",
-                        "The brain controls ____.",
-                        "Bones give ____ to the body.",
-                        "Muscles help us to ____.",
-                        "The lungs help in ____."
-                    ],
-                    "True/False": [
-                        "The heart is a muscle. (True)",
-                        "The brain is not important. (False)",
-                        "Bones protect organs. (True)",
-                        "Muscles cannot move the body. (False)",
-                        "Lungs help us to breathe. (True)"
-                    ],
-                    "Match the Following": [
-                        {
-                            "Heart": "Pumps blood"
-                        },
-                        {
-                            "Brain": "Controls body"
-                        },
-                        {
-                            "Bones": "Support body"
-                        },
-                        {
-                            "Muscles": "Help movement"
-                        },
-                        {
-                            "Lungs": "Help breathing"
+                            "answer": "Family"
                         }
                     ],
                     "Answer the Following": [
-                        "What does the heart do?",
-                        "What controls the body?",
-                        "What do bones do?",
-                        "How do muscles help?",
-                        "What do lungs do?"
+                        "Who are the members of your family?",
+                        "Why is a home important?",
+                        "Name two ways you can help at home.",
+                        "What is the difference between a nuclear and a joint family?",
+                        "Why should we keep our home clean?"
+                    ]
+                },
+                "Chapter 4: Plants Around Us": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "A plant grows from a ______.",
+                            "answer": "seed"
+                        },
+                        {
+                            "question": "Plants need sunlight and ______ to grow.",
+                            "answer": "water"
+                        },
+                        {
+                            "question": "The ______ of a plant is under the ground.",
+                            "answer": "root"
+                        },
+                        {
+                            "question": "We get fruits and ______ from plants.",
+                            "answer": "vegetables"
+                        },
+                        {
+                            "question": "A ______ is a big and strong plant.",
+                            "answer": "tree"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "Plants are living things.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We should not water plants.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A tree has a strong stem called a trunk.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Plants give us food.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We can eat the roots of some plants.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Root": "Absorbs water"
+                        },
+                        {
+                            "Stem": "Supports the plant"
+                        },
+                        {
+                            "Leaf": "Makes food"
+                        },
+                        {
+                            "Flower": "Becomes a fruit"
+                        },
+                        {
+                            "Seed": "Grows into a new plant"
+                        }
                     ],
                     "Choose the Best Answer": [
                         {
-                            "question": "What pumps blood in our body?",
+                            "question": "Which part of the plant is colorful and smells nice?",
                             "options": [
-                                "Lungs",
-                                "Brain",
-                                "Heart",
-                                "Bones"
+                                "Root",
+                                "Stem",
+                                "Flower",
+                                "Leaf"
                             ],
-                            "answer": "Heart"
+                            "answer": "Flower"
                         },
                         {
-                            "question": "Which organ controls the body?",
+                            "question": "What do plants take from the air?",
                             "options": [
-                                "Heart",
-                                "Brain",
-                                "Lungs",
-                                "Stomach"
+                                "Water",
+                                "Sunlight",
+                                "Carbon Dioxide",
+                                "Food"
                             ],
-                            "answer": "Brain"
+                            "answer": "Carbon Dioxide"
                         },
                         {
-                            "question": "What supports our body?",
+                            "question": "Which of these we get from plants?",
                             "options": [
-                                "Skin",
-                                "Bones",
-                                "Muscles",
-                                "Nerves"
+                                "Car",
+                                "Computer",
+                                "Apple",
+                                "Chair"
                             ],
-                            "answer": "Bones"
+                            "answer": "Apple"
                         },
                         {
-                            "question": "What helps in movement?",
+                            "question": "What is the first step in a plant's life?",
                             "options": [
-                                "Hair",
-                                "Teeth",
-                                "Muscles",
-                                "Eyes"
+                                "Flower",
+                                "Fruit",
+                                "Seed",
+                                "Tree"
                             ],
-                            "answer": "Muscles"
+                            "answer": "Seed"
                         },
                         {
-                            "question": "What helps us breathe?",
+                            "question": "Which part of the plant is called its kitchen?",
                             "options": [
-                                "Stomach",
-                                "Heart",
-                                "Lungs",
-                                "Legs"
+                                "Root",
+                                "Stem",
+                                "Leaf",
+                                "Flower"
                             ],
-                            "answer": "Lungs"
-                        }
-                    ]
-                },
-                "Chapter 3": {
-                    "Fill in the Blanks": [
-                        "The earth orbits the ___.",
-                        "The moon shines by ____ the sun\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u00a0\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00e2\u20ac\u00a6\u00c3\u201a\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00e2\u20ac\u00a6\u00c3\u201a\u00c2\u00be\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2s light.",
-                        "Stars are big balls of ____.",
-                        "Day and night happen because of the earth\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u00a0\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00e2\u20ac\u00a6\u00c3\u201a\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00e2\u20ac\u00a6\u00c3\u201a\u00c2\u00be\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2s ___.",
-                        "Gravity pulls things ___."
-                    ],
-                    "True/False": [
-                        "The earth orbits the sun. (True)",
-                        "The moon produces its own light. (False)",
-                        "Stars are hot balls of gas. (True)",
-                        "Day and night are caused by the moon. (False)",
-                        "Gravity pulls objects down. (True)"
-                    ],
-                    "Match the Following": [
-                        {
-                            "Earth": "Orbits sun"
-                        },
-                        {
-                            "Moon": "Reflects light"
-                        },
-                        {
-                            "Stars": "Hot gas balls"
-                        },
-                        {
-                            "Day and Night": "Earth's rotation"
-                        },
-                        {
-                            "Gravity": "Pulls down"
+                            "answer": "Leaf"
                         }
                     ],
                     "Answer the Following": [
-                        "What does the earth orbit?",
-                        "How does the moon shine?",
-                        "What are stars made of?",
-                        "Why do we have day and night?",
-                        "What does gravity do?"
+                        "Name three things that plants need to grow.",
+                        "Name any two parts of a plant.",
+                        "Why are plants important to us?",
+                        "Name one plant whose root we eat.",
+                        "How do we help plants to grow?"
                     ]
                 },
-                "Chapter 4": {
+                "Chapter 5: Animals Around Us": {
                     "Fill in the Blanks": [
-                        "Water can be a ____ or solid.",
-                        "Ice is frozen ___.",
-                        "Steam is water in ___.",
-                        "Rain falls from ____. ",
-                        "The water cycle has ____ parts."
+                        {
+                            "question": "A ______ gives us wool.",
+                            "answer": "sheep"
+                        },
+                        {
+                            "question": "A ______ has a trunk.",
+                            "answer": "elephant"
+                        },
+                        {
+                            "question": "Birds have ______ to fly.",
+                            "answer": "wings"
+                        },
+                        {
+                            "question": "A ______ lives in water.",
+                            "answer": "fish"
+                        },
+                        {
+                            "question": "We get eggs from a ______.",
+                            "answer": "hen"
+                        }
                     ],
                     "True/False": [
-                        "Water can be liquid, solid, or gas. (True)",
-                        "Ice is water in liquid form. (False)",
-                        "Steam is water vapor. (True)",
-                        "Rain comes from clouds. (True)",
-                        "Water cycle has two parts. (False)"
+                        {
+                            "question": "A lion is a pet animal.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A dog barks.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "All animals live on land.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A cow gives us milk.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We should be kind to animals.",
+                            "answer": "True"
+                        }
                     ],
                     "Match the Following": [
                         {
-                            "Ice": "Frozen water"
+                            "Lion": "Roars"
                         },
                         {
-                            "Steam": "Water vapor"
+                            "Snake": "Hisses"
                         },
                         {
-                            "Rain": "From clouds"
+                            "Cow": "Moo"
                         },
                         {
-                            "Water cycle": "Has stages"
+                            "Bee": "Buzz"
                         },
                         {
-                            "Water": "Essential for life"
+                            "Frog": "Croak"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which animal gives us milk?",
+                            "options": [
+                                "Lion",
+                                "Tiger",
+                                "Cow",
+                                "Dog"
+                            ],
+                            "answer": "Cow"
+                        },
+                        {
+                            "question": "Which animal guards our house?",
+                            "options": [
+                                "Cat",
+                                "Dog",
+                                "Cow",
+                                "Goat"
+                            ],
+                            "answer": "Dog"
+                        },
+                        {
+                            "question": "Where does a fish live?",
+                            "options": [
+                                "Forest",
+                                "Water",
+                                "Desert",
+                                "Sky"
+                            ],
+                            "answer": "Water"
+                        },
+                        {
+                            "question": "Which animal has a long neck?",
+                            "options": [
+                                "Elephant",
+                                "Giraffe",
+                                "Lion",
+                                "Bear"
+                            ],
+                            "answer": "Giraffe"
+                        },
+                        {
+                            "question": "Which of these is a wild animal?",
+                            "options": [
+                                "Cow",
+                                "Dog",
+                                "Cat",
+                                "Tiger"
+                            ],
+                            "answer": "Tiger"
                         }
                     ],
                     "Answer the Following": [
-                        "What states can water be in?",
-                        "What is ice?",
-                        "What is steam?",
-                        "Where does rain come from?",
-                        "How many parts does the water cycle have?"
+                        "Name two pet animals.",
+                        "Name two animals that live in the jungle.",
+                        "What do we get from a hen?",
+                        "How do birds move from one place to another?",
+                        "Why should we not tease animals?"
                     ]
-                },
-                "Chapter 5": {
+                }
+            },
+            "class 2": {
+                "Chapter 1: Living and Non-Living Things": {
                     "Fill in the Blanks": [
-                        "Electricity powers ____.",
-                        "Batteries store ___.",
-                        "Switches turn ____ on or off.",
-                        "Wires carry ___.",
-                        "Light bulbs produce ___."
+                        {
+                            "question": "Living things need ______ to breathe.",
+                            "answer": "air"
+                        },
+                        {
+                            "question": "A ______ thing cannot grow.",
+                            "answer": "non-living"
+                        },
+                        {
+                            "question": "Living things ______ and change.",
+                            "answer": "grow"
+                        },
+                        {
+                            "question": "A plant is a ______ thing.",
+                            "answer": "living"
+                        },
+                        {
+                            "question": "A table is a ______ thing.",
+                            "answer": "non-living"
+                        }
                     ],
                     "True/False": [
-                        "Electricity is energy. (True)",
-                        "Batteries store electricity. (True)",
-                        "Switches cannot turn off devices. (False)",
-                        "Wires carry electricity. (True)",
-                        "Light bulbs produce heat only. (False)"
+                        {
+                            "question": "A car can breathe.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A bird is a living thing.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A rock can have babies.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "All living things need food.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A chair is a living thing.",
+                            "answer": "False"
+                        }
                     ],
                     "Match the Following": [
                         {
-                            "Electricity": "Powers devices"
+                            "Dog": "Living"
                         },
                         {
-                            "Battery": "Stores energy"
+                            "Stone": "Non-Living"
                         },
                         {
-                            "Switch": "Controls power"
+                            "Tree": "Grows"
                         },
                         {
-                            "Wire": "Carries electricity"
+                            "Book": "Does not grow"
                         },
                         {
-                            "Light bulb": "Produces light"
+                            "Fish": "Breathes"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which of these is a living thing?",
+                            "options": [
+                                "Pencil",
+                                "Boy",
+                                "Ball",
+                                "Chair"
+                            ],
+                            "answer": "Boy"
+                        },
+                        {
+                            "question": "Which of these is a non-living thing?",
+                            "options": [
+                                "Cat",
+                                "Rose plant",
+                                "Table",
+                                "Fish"
+                            ],
+                            "answer": "Table"
+                        },
+                        {
+                            "question": "What do living things do?",
+                            "options": [
+                                "Grow",
+                                "Eat",
+                                "Breathe",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        },
+                        {
+                            "question": "Which of these does a non-living thing NOT do?",
+                            "options": [
+                                "Move",
+                                "Grow",
+                                "Reproduce",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        },
+                        {
+                            "question": "What do all living things need to stay alive?",
+                            "options": [
+                                "Food",
+                                "Water",
+                                "Air",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
                         }
                     ],
                     "Answer the Following": [
-                        "What does electricity do?",
-                        "What do batteries store?",
-                        "What do switches do?",
-                        "What do wires do?",
-                        "What does a light bulb produce?"
+                        "What are living things? Give two examples.",
+                        "What are non-living things? Give two examples.",
+                        "Name three things that living things can do.",
+                        "Why is a car a non-living thing?",
+                        "How can you tell if something is living or non-living?"
+                    ]
+                },
+                "Chapter 2: Types of Plants": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "A ______ tree stays green all year.",
+                            "answer": "evergreen"
+                        },
+                        {
+                            "question": "A ______ plant has a weak stem and climbs up a support.",
+                            "answer": "climber"
+                        },
+                        {
+                            "question": "A ______ is a very small plant with soft stems.",
+                            "answer": "herb"
+                        },
+                        {
+                            "question": "A ______ tree sheds its leaves in winter.",
+                            "answer": "deciduous"
+                        },
+                        {
+                            "question": "A ______ plant has a thick, hard, and woody stem.",
+                            "answer": "tree"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "A shrub is bigger than a tree.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Money plant is a climber.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Grass is a herb.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A creeper has a strong stem.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A rose plant is a shrub.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Mango tree": "Tree"
+                        },
+                        {
+                            "Watermelon": "Creeper"
+                        },
+                        {
+                            "Rose": "Shrub"
+                        },
+                        {
+                            "Sunflower": "Herb"
+                        },
+                        {
+                            "Grapevine": "Climber"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which of these is a tree?",
+                            "options": [
+                                "Tomato",
+                                "Neem",
+                                "Grass",
+                                "Pumpkin"
+                            ],
+                            "answer": "Neem"
+                        },
+                        {
+                            "question": "Which plant has a thin, green, and soft stem?",
+                            "options": [
+                                "Tree",
+                                "Shrub",
+                                "Herb",
+                                "Climber"
+                            ],
+                            "answer": "Herb"
+                        },
+                        {
+                            "question": "What type of plant is a pumpkin?",
+                            "options": [
+                                "Tree",
+                                "Shrub",
+                                "Climber",
+                                "Creeper"
+                            ],
+                            "answer": "Creeper"
+                        },
+                        {
+                            "question": "Which of these is a shrub?",
+                            "options": [
+                                "Banyan",
+                                "Tulsi",
+                                "Hibiscus",
+                                "Grapevine"
+                            ],
+                            "answer": "Hibiscus"
+                        },
+                        {
+                            "question": "What do climbers need to grow upright?",
+                            "options": [
+                                "More water",
+                                "More sunlight",
+                                "Support",
+                                "Bigger pot"
+                            ],
+                            "answer": "Support"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is the difference between a tree and a shrub?",
+                        "Give two examples of herbs.",
+                        "What is a creeper? Give one example.",
+                        "Why do climbers need support?",
+                        "Name two types of trees based on their leaves."
+                    ]
+                },
+                "Chapter 3: Wild and Domestic Animals": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "Animals that live in forests are called ______ animals.",
+                            "answer": "wild"
+                        },
+                        {
+                            "question": "A ______ is a domestic animal that guards our house.",
+                            "answer": "dog"
+                        },
+                        {
+                            "question": "Animals that we keep at home are called ______ animals.",
+                            "answer": "domestic"
+                        },
+                        {
+                            "question": "A lion is a ______ animal.",
+                            "answer": "wild"
+                        },
+                        {
+                            "question": "A ______ gives us wool.",
+                            "answer": "sheep"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "A tiger is a pet animal.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We get silk from silkworms.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A cow is a wild animal.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We should be kind to all animals.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "An elephant in a zoo is a wild animal.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Lion": "Wild"
+                        },
+                        {
+                            "Cow": "Domestic"
+                        },
+                        {
+                            "Hen": "Gives eggs"
+                        },
+                        {
+                            "Bee": "Gives honey"
+                        },
+                        {
+                            "Goat": "Gives milk"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which of these is a wild animal?",
+                            "options": [
+                                "Cow",
+                                "Goat",
+                                "Elephant",
+                                "Cat"
+                            ],
+                            "answer": "Elephant"
+                        },
+                        {
+                            "question": "Which animal gives us milk?",
+                            "options": [
+                                "Lion",
+                                "Tiger",
+                                "Cow",
+                                "Dog"
+                            ],
+                            "answer": "Cow"
+                        },
+                        {
+                            "question": "Where do wild animals live?",
+                            "options": [
+                                "In our homes",
+                                "In forests",
+                                "On farms",
+                                "In cities"
+                            ],
+                            "answer": "In forests"
+                        },
+                        {
+                            "question": "What do we get from hens?",
+                            "options": [
+                                "Milk",
+                                "Eggs",
+                                "Wool",
+                                "Honey"
+                            ],
+                            "answer": "Eggs"
+                        },
+                        {
+                            "question": "Why do people keep domestic animals?",
+                            "options": [
+                                "For food",
+                                "For work",
+                                "For company",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What are wild animals? Give two examples.",
+                        "What are domestic animals? Give two examples.",
+                        "Name two products we get from animals.",
+                        "Why can't we keep a lion as a pet?",
+                        "How are domestic animals useful to us?"
+                    ]
+                },
+                "Chapter 4: Our Universe": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "The Sun is a ______.",
+                            "answer": "star"
+                        },
+                        {
+                            "question": "The Earth ______ around the Sun.",
+                            "answer": "revolves"
+                        },
+                        {
+                            "question": "The ______ is Earth's natural satellite.",
+                            "answer": "Moon"
+                        },
+                        {
+                            "question": "The Sun gives us ______ and light.",
+                            "answer": "heat"
+                        },
+                        {
+                            "question": "At night, we see the ______ and stars.",
+                            "answer": "moon"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "The Sun is a planet.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The Moon has its own light.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The Earth is round like a ball.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "There are many stars in the sky.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "The Sun rises in the west.",
+                            "answer": "False"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Sun": "Star"
+                        },
+                        {
+                            "Earth": "Planet"
+                        },
+                        {
+                            "Moon": "Satellite"
+                        },
+                        {
+                            "Stars": "Twinkle at night"
+                        },
+                        {
+                            "Sun": "Gives us light"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "What is the Sun?",
+                            "options": [
+                                "A planet",
+                                "A star",
+                                "A satellite",
+                                "A meteor"
+                            ],
+                            "answer": "A star"
+                        },
+                        {
+                            "question": "What does the Earth revolve around?",
+                            "options": [
+                                "The Moon",
+                                "The Sun",
+                                "Mars",
+                                "Jupiter"
+                            ],
+                            "answer": "The Sun"
+                        },
+                        {
+                            "question": "Why can we see the Moon?",
+                            "options": [
+                                "It has its own light",
+                                "It reflects sunlight",
+                                "It is on fire",
+                                "It is a star"
+                            ],
+                            "answer": "It reflects sunlight"
+                        },
+                        {
+                            "question": "When do we see stars?",
+                            "options": [
+                                "During the day",
+                                "At night",
+                                "In the evening",
+                                "Both B and C"
+                            ],
+                            "answer": "Both B and C"
+                        },
+                        {
+                            "question": "What does the Sun give us?",
+                            "options": [
+                                "Light",
+                                "Heat",
+                                "Energy",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is the Sun?",
+                        "Why is the Earth called a planet?",
+                        "What is the Moon?",
+                        "Why does the Sun appear bigger than other stars?",
+                        "Name one reason why the Sun is important for us."
+                    ]
+                },
+                "Chapter 5: Air and Water": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "All living things need ______ to breathe.",
+                            "answer": "air"
+                        },
+                        {
+                            "question": "Moving air is called ______.",
+                            "answer": "wind"
+                        },
+                        {
+                            "question": "We should drink ______ water.",
+                            "answer": "clean"
+                        },
+                        {
+                            "question": "Water can exist as solid, liquid, and ______.",
+                            "answer": "gas"
+                        },
+                        {
+                            "question": "We use water for ______ and bathing.",
+                            "answer": "drinking"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "Air has weight.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We can see air.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "All the water on Earth is fit for drinking.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Wind helps to dry clothes.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We should waste water.",
+                            "answer": "False"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Windmill": "Uses wind"
+                        },
+                        {
+                            "Ice": "Solid water"
+                        },
+                        {
+                            "Steam": "Gaseous water"
+                        },
+                        {
+                            "River": "Source of water"
+                        },
+                        {
+                            "Water Vapour": "In the air"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "What is air made up of?",
+                            "options": [
+                                "Oxygen",
+                                "Nitrogen",
+                                "Other gases",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        },
+                        {
+                            "question": "Which form of water is ice?",
+                            "options": [
+                                "Solid",
+                                "Liquid",
+                                "Gas",
+                                "Plasma"
+                            ],
+                            "answer": "Solid"
+                        },
+                        {
+                            "question": "Why do we need to drink water?",
+                            "options": [
+                                "To stay hydrated",
+                                "To wash clothes",
+                                "To swim",
+                                "To cook food"
+                            ],
+                            "answer": "To stay hydrated"
+                        },
+                        {
+                            "question": "How can we save water?",
+                            "options": [
+                                "By leaving taps open",
+                                "By taking shorter showers",
+                                "By washing cars with a hose",
+                                "By not fixing leaks"
+                            ],
+                            "answer": "By taking shorter showers"
+                        },
+                        {
+                            "question": "What do plants use air for?",
+                            "options": [
+                                "Breathing",
+                                "Making food",
+                                "Both A and B",
+                                "None of these"
+                            ],
+                            "answer": "Both A and B"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "Why is air important for living things?",
+                        "Name three uses of water.",
+                        "What are the three forms of water?",
+                        "How can we feel air?",
+                        "Why should we not waste water?"
+                    ]
+                }
+            },
+            "class 3": {
+                "Chapter 1: Parts of a Plant": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "The ______ absorbs water and minerals from the soil.",
+                            "answer": "root"
+                        },
+                        {
+                            "question": "The ______ holds the plant upright.",
+                            "answer": "stem"
+                        },
+                        {
+                            "question": "The ______ makes food for the plant.",
+                            "answer": "leaf"
+                        },
+                        {
+                            "question": "The ______ is the reproductive part of the plant.",
+                            "answer": "flower"
+                        },
+                        {
+                            "question": "The ______ protects the seed.",
+                            "answer": "fruit"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "Leaves are of different shapes and sizes.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "The stem transports water to the leaves.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "All flowers become fruits.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Roots hold the soil together.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Potato is a root.",
+                            "answer": "False"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Root": "Carrot"
+                        },
+                        {
+                            "Stem": "Sugarcane"
+                        },
+                        {
+                            "Leaf": "Spinach"
+                        },
+                        {
+                            "Flower": "Cauliflower"
+                        },
+                        {
+                            "Fruit": "Tomato"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which part of the plant prepares food?",
+                            "options": [
+                                "Root",
+                                "Stem",
+                                "Leaf",
+                                "Flower"
+                            ],
+                            "answer": "Leaf"
+                        },
+                        {
+                            "question": "Which part of the plant grows underground?",
+                            "options": [
+                                "Stem",
+                                "Leaf",
+                                "Root",
+                                "Flower"
+                            ],
+                            "answer": "Root"
+                        },
+                        {
+                            "question": "What is the function of the stem?",
+                            "options": [
+                                "To make food",
+                                "To absorb water",
+                                "To support the plant",
+                                "To produce seeds"
+                            ],
+                            "answer": "To support the plant"
+                        },
+                        {
+                            "question": "Which part of the plant turns into a fruit?",
+                            "options": [
+                                "Root",
+                                "Stem",
+                                "Leaf",
+                                "Flower"
+                            ],
+                            "answer": "Flower"
+                        },
+                        {
+                            "question": "Which of these is a fruit?",
+                            "options": [
+                                "Potato",
+                                "Cabbage",
+                                "Apple",
+                                "Cauliflower"
+                            ],
+                            "answer": "Apple"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What are the main parts of a plant?",
+                        "What is the function of the root?",
+                        "How does the leaf help the plant?",
+                        "What is the difference between a flower and a fruit?",
+                        "Name two plants whose roots we eat."
+                    ]
+                },
+                "Chapter 2: Birds": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "Birds have ______ to fly.",
+                            "answer": "wings"
+                        },
+                        {
+                            "question": "Birds have a ______ instead of teeth.",
+                            "answer": "beak"
+                        },
+                        {
+                            "question": "Birds lay ______.",
+                            "answer": "eggs"
+                        },
+                        {
+                            "question": "The ______ of a bird helps it to balance and steer.",
+                            "answer": "tail"
+                        },
+                        {
+                            "question": "Birds build ______ to lay their eggs.",
+                            "answer": "nests"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "All birds can fly.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A bird's body is covered with feathers.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "An ostrich is a flightless bird.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Birds are warm-blooded animals.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A duck has a broad and flat beak.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Eagle": "Hooked beak"
+                        },
+                        {
+                            "Duck": "Webbed feet"
+                        },
+                        {
+                            "Woodpecker": "Long, strong beak"
+                        },
+                        {
+                            "Sparrow": "Short, hard beak"
+                        },
+                        {
+                            "Hummingbird": "Long, thin beak"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "What helps birds to fly?",
+                            "options": [
+                                "Light bones",
+                                "Wings",
+                                "Feathers",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        },
+                        {
+                            "question": "Which bird has a beak suited for sucking nectar?",
+                            "options": [
+                                "Eagle",
+                                "Sparrow",
+                                "Hummingbird",
+                                "Duck"
+                            ],
+                            "answer": "Hummingbird"
+                        },
+                        {
+                            "question": "Why do ducks have webbed feet?",
+                            "options": [
+                                "To perch on trees",
+                                "To swim in water",
+                                "To catch prey",
+                                "To run fast"
+                            ],
+                            "answer": "To swim in water"
+                        },
+                        {
+                            "question": "What do birds use to build their nests?",
+                            "options": [
+                                "Twigs",
+                                "Leaves",
+                                "Mud",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        },
+                        {
+                            "question": "Which of these is a flightless bird?",
+                            "options": [
+                                "Crow",
+                                "Sparrow",
+                                "Penguin",
+                                "Pigeon"
+                            ],
+                            "answer": "Penguin"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "Name three body parts of a bird.",
+                        "How are a bird's bones helpful for flying?",
+                        "Why do different birds have different kinds of beaks?",
+                        "What is a nest? Why do birds build nests?",
+                        "Name two birds that cannot fly."
+                    ]
+                },
+                "Chapter 3: Safety and First Aid": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "We should cross the road at the ______.",
+                            "answer": "zebra crossing"
+                        },
+                        {
+                            "question": "In case of a fire, call the ______.",
+                            "answer": "fire brigade"
+                        },
+                        {
+                            "question": "A ______ is used to put out a fire.",
+                            "answer": "fire extinguisher"
+                        },
+                        {
+                            "question": "For a minor cut, wash it with clean water and apply an ______.",
+                            "answer": "antiseptic"
+                        },
+                        {
+                            "question": "We should not play with ______.",
+                            "answer": "electrical appliances"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "It is safe to run on a slippery floor.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We should not talk to strangers.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We can play with sharp objects like knives.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We should always wear a seatbelt in a car.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "In case of a major injury, we should inform an adult immediately.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Traffic Light Red": "Stop"
+                        },
+                        {
+                            "Traffic Light Green": "Go"
+                        },
+                        {
+                            "Bandage": "Tie a wound"
+                        },
+                        {
+                            "Antiseptic Cream": "Prevent infection"
+                        },
+                        {
+                            "101": "Fire Station"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "What should you do if you get a minor burn?",
+                            "options": [
+                                "Put ice on it",
+                                "Put the burnt area under cool running water",
+                                "Rub it",
+                                "Put butter on it"
+                            ],
+                            "answer": "Put the burnt area under cool running water"
+                        },
+                        {
+                            "question": "Which number do you dial for an ambulance?",
+                            "options": [
+                                "100",
+                                "101",
+                                "102",
+                                "103"
+                            ],
+                            "answer": "102"
+                        },
+                        {
+                            "question": "Where should we walk on the road?",
+                            "options": [
+                                "On the road",
+                                "On the footpath",
+                                "In the middle of the road",
+                                "On the zebra crossing"
+                            ],
+                            "answer": "On the footpath"
+                        },
+                        {
+                            "question": "What is the first thing you should do if you see a fire?",
+                            "options": [
+                                "Hide",
+                                "Inform an adult",
+                                "Pour water",
+                                "Play with it"
+                            ],
+                            "answer": "Inform an adult"
+                        },
+                        {
+                            "question": "Why should we not take medicines on our own?",
+                            "options": [
+                                "They are expensive",
+                                "They might be wrong and harmful",
+                                "They taste bad",
+                                "They are for adults only"
+                            ],
+                            "answer": "They might be wrong and harmful"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What are safety rules? Why should we follow them?",
+                        "What should you do if a stranger offers you a chocolate?",
+                        "Name two safety rules you must follow on the road.",
+                        "What is first aid?",
+                        "What should be kept in a first aid box?"
+                    ]
+                },
+                "Chapter 4: Soil": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "The top layer of the earth is called ______.",
+                            "answer": "soil"
+                        },
+                        {
+                            "question": "______ soil is best for growing plants.",
+                            "answer": "Loamy"
+                        },
+                        {
+                            "question": "Sand particles are ______ in size.",
+                            "answer": "large"
+                        },
+                        {
+                            "question": "Clay soil is ______ and sticky when wet.",
+                            "answer": "smooth"
+                        },
+                        {
+                            "question": "______ is made up of dead plants and animals.",
+                            "answer": "Humus"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "Soil is important for life on Earth.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "All types of soil are the same.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Sandy soil holds water well.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Earthworms live in soil.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Humus makes the soil fertile.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Sandy Soil": "Drains water quickly"
+                        },
+                        {
+                            "Clayey Soil": "Holds water"
+                        },
+                        {
+                            "Loamy Soil": "Best for gardening"
+                        },
+                        {
+                            "Humus": "Makes soil fertile"
+                        },
+                        {
+                            "Earthworm": "Friend of the farmer"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which type of soil is gritty and has large particles?",
+                            "options": [
+                                "Clayey",
+                                "Sandy",
+                                "Loamy",
+                                "Garden"
+                            ],
+                            "answer": "Sandy"
+                        },
+                        {
+                            "question": "Which soil is used for making pots?",
+                            "options": [
+                                "Sandy",
+                                "Loamy",
+                                "Clayey",
+                                "All of these"
+                            ],
+                            "answer": "Clayey"
+                        },
+                        {
+                            "question": "What gives the soil its dark brown colour?",
+                            "options": [
+                                "Sand",
+                                "Clay",
+                                "Humus",
+                                "Gravel"
+                            ],
+                            "answer": "Humus"
+                        },
+                        {
+                            "question": "Which of these is a component of soil?",
+                            "options": [
+                                "Minerals",
+                                "Air",
+                                "Water",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        },
+                        {
+                            "question": "Why is loamy soil good for plants?",
+                            "options": [
+                                "It has good drainage",
+                                "It can hold water",
+                                "It has humus",
+                                "All of these"
+                            ],
+                            "answer": "All of these"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is soil?",
+                        "Name the different types of soil.",
+                        "What is humus? Why is it important?",
+                        "How is clayey soil different from sandy soil?",
+                        "Why is soil considered a natural resource?"
+                    ]
+                },
+                "Chapter 5: Light, Sound, and Force": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "______ helps us to see objects.",
+                            "answer": "Light"
+                        },
+                        {
+                            "question": "Sound is produced by ______ objects.",
+                            "answer": "vibrating"
+                        },
+                        {
+                            "question": "A push or a pull is called a ______.",
+                            "answer": "force"
+                        },
+                        {
+                            "question": "We cannot see through ______ objects.",
+                            "answer": "opaque"
+                        },
+                        {
+                            "question": "The sun is a ______ source of light.",
+                            "answer": "natural"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "Light travels in a straight line.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Sound can travel through vacuum.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A force can change the shape of an object.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A bulb is a natural source of light.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "A rolling ball stops due to friction.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Torch": "Artificial Light"
+                        },
+                        {
+                            "Sun": "Natural Light"
+                        },
+                        {
+                            "Guitar": "Produces Sound"
+                        },
+                        {
+                            "Kicking a ball": "Applying Force"
+                        },
+                        {
+                            "Glass": "Transparent"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which of these is a transparent object?",
+                            "options": [
+                                "Wood",
+                                "Metal",
+                                "Glass",
+                                "Cardboard"
+                            ],
+                            "answer": "Glass"
+                        },
+                        {
+                            "question": "How does sound travel?",
+                            "options": [
+                                "In waves",
+                                "In straight lines",
+                                "In circles",
+                                "It does not travel"
+                            ],
+                            "answer": "In waves"
+                        },
+                        {
+                            "question": "What force pulls everything towards the Earth?",
+                            "options": [
+                                "Magnetic Force",
+                                "Gravitational Force",
+                                "Frictional Force",
+                                "Muscular Force"
+                            ],
+                            "answer": "Gravitational Force"
+                        },
+                        {
+                            "question": "Which of these produces sound?",
+                            "options": [
+                                "A sleeping dog",
+                                "A stationary car",
+                                "A ringing bell",
+                                "A book"
+                            ],
+                            "answer": "A ringing bell"
+                        },
+                        {
+                            "question": "What is needed to see a non-luminous object?",
+                            "options": [
+                                "Eyes",
+                                "Light",
+                                "Both A and B",
+                                "None of these"
+                            ],
+                            "answer": "Both A and B"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What are the different types of objects based on how light passes through them?",
+                        "How is sound produced?",
+                        "What is force? Give two examples of pushing and pulling.",
+                        "What is gravity?",
+                        "Why can we not see in the dark?"
                     ]
                 }
             }
         },
         "Computer": {
-            "Class 4": {
-                "Chapter 2": {
+            "class 1": {
+                "Chapter 1: Know Your Computer": {
                     "Fill in the Blanks": [
                         {
-                            "question": "Software helps the computer to ___.",
-                            "answer": "work"
+                            "question": "A computer is an ___________ machine.",
+                            "answer": "electronic"
                         },
                         {
-                            "question": "The CPU is called the ___ of the computer.",
+                            "question": "We watch movies on the __________.",
+                            "answer": "monitor"
+                        },
+                        {
+                            "question": "We type using a __________.",
+                            "answer": "keyboard"
+                        },
+                        {
+                            "question": "The CPU is the __________ of the computer.",
                             "answer": "brain"
                         },
                         {
-                            "question": "We use a printer to ___ documents.",
-                            "answer": "print"
-                        },
-                        {
-                            "question": "A scanner is used to ___ images.",
-                            "answer": "scan"
-                        },
-                        {
-                            "question": "Computers can work very ___.",
-                            "answer": "fast"
+                            "question": "We click using a __________.",
+                            "answer": "mouse"
                         }
                     ],
                     "True/False": [
-                        "Software is a program. (True)",
-                        "CPU is the computer\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u00a0\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00e2\u20ac\u00a6\u00c3\u201a\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c6\u2019\u00c3\u201a\u00c2\u00a2\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u201a\u00c2\u00ac\u00c3\u0192\u00e2\u20ac\u00a6\u00c3\u201a\u00c2\u00be\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a2s brain. (True)",
-                        "Printers scan documents. (False)",
-                        "Scanners copy images. (True)",
-                        "Computers are slow machines. (False)"
+                        {
+                            "question": "A computer can think like humans.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The monitor looks like a TV.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We can touch the CPU.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A mouse has three buttons.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We should be gentle with computer parts.",
+                            "answer": "True"
+                        }
                     ],
                     "Match the Following": [
                         {
-                            "Software": "Program"
+                            "Monitor": "Shows pictures and words"
                         },
                         {
-                            "CPU": "Processor"
+                            "Keyboard": "Used for typing"
                         },
                         {
-                            "Printer": "Prints paper"
+                            "Mouse": "Used for pointing"
                         },
                         {
-                            "Scanner": "Copies images"
+                            "CPU": "Processes information"
                         },
                         {
-                            "Computer": "Electronic machine"
+                            "Printer": "Gives a paper copy"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which part is called the brain of the computer?",
+                            "options": [
+                                "Monitor",
+                                "Keyboard",
+                                "Mouse",
+                                "CPU"
+                            ],
+                            "answer": "CPU"
+                        },
+                        {
+                            "question": "What do we use to type our name?",
+                            "options": [
+                                "Mouse",
+                                "Keyboard",
+                                "Monitor",
+                                "Speaker"
+                            ],
+                            "answer": "Keyboard"
+                        },
+                        {
+                            "question": "Which part shows us what we are doing?",
+                            "options": [
+                                "CPU",
+                                "Mouse",
+                                "Monitor",
+                                "Keyboard"
+                            ],
+                            "answer": "Monitor"
+                        },
+                        {
+                            "question": "How do we open a program on the screen?",
+                            "options": [
+                                "By looking at it",
+                                "By double-clicking the mouse",
+                                "By pressing the CPU",
+                                "By typing on the monitor"
+                            ],
+                            "answer": "By double-clicking the mouse"
+                        },
+                        {
+                            "question": "Which of these is a computer part?",
+                            "options": [
+                                "Chair",
+                                "Table",
+                                "Mouse",
+                                "Book"
+                            ],
+                            "answer": "Mouse"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What are the four main parts of a computer?",
+                        "What is the use of a monitor?",
+                        "Why is the CPU important?",
+                        "Name one thing you can do with a computer.",
+                        "How should we take care of a computer?"
+                    ],
+                    "One Word Answer": [
+                        {
+                            "question": "who am i ?",
+                            "answer": "bibhuti"
+                        }
+                    ]
+                },
+                "Chapter 2: Parts of a Computer": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "The __________ key is used to make a space.",
+                            "answer": "spacebar"
+                        },
+                        {
+                            "question": "The __________ key is used to go to the next line.",
+                            "answer": "enter"
+                        },
+                        {
+                            "question": "A mouse has a left and a __________ button.",
+                            "answer": "right"
+                        },
+                        {
+                            "question": "We keep the mouse on a __________.",
+                            "answer": "mouse pad"
+                        },
+                        {
+                            "question": "The __________ keys have letters A to Z.",
+                            "answer": "alphabet"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "The keyboard has number keys.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "The spacebar is a small key.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We can draw with a mouse.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "We should pull the mouse wire.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The mouse pad helps the mouse to work properly.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Spacebar": "Makes a space"
+                        },
+                        {
+                            "Enter Key": "Moves to next line"
+                        },
+                        {
+                            "Left Button": "Selects items"
+                        },
+                        {
+                            "Right Button": "Shows menu"
+                        },
+                        {
+                            "Mouse Pad": "Helps mouse move"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which is the longest key on the keyboard?",
+                            "options": [
+                                "Enter Key",
+                                "Shift Key",
+                                "Spacebar",
+                                "Alphabet Key"
+                            ],
+                            "answer": "Spacebar"
+                        },
+                        {
+                            "question": "Which button do we press to select an item?",
+                            "options": [
+                                "Right Button",
+                                "Left Button",
+                                "Scroll Wheel",
+                                "Both Buttons"
+                            ],
+                            "answer": "Left Button"
+                        },
+                        {
+                            "question": "What do we use to move the cursor on the screen?",
+                            "options": [
+                                "Keyboard",
+                                "Monitor",
+                                "Mouse",
+                                "CPU"
+                            ],
+                            "answer": "Mouse"
+                        },
+                        {
+                            "question": "What appears when we right-click?",
+                            "options": [
+                                "A new game",
+                                "A list of options",
+                                "A picture",
+                                "A sound"
+                            ],
+                            "answer": "A list of options"
+                        },
+                        {
+                            "question": "Why do we use a mouse pad?",
+                            "options": [
+                                "To make the mouse look pretty",
+                                "To help the mouse move smoothly",
+                                "To store the mouse",
+                                "To clean the mouse"
+                            ],
+                            "answer": "To help the mouse move smoothly"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What are the special keys on a keyboard?",
+                        "What is the use of the Enter key?",
+                        "What are the different types of clicks?",
+                        "How is a mouse useful?",
+                        "How do we take care of a mouse?"
+                    ]
+                }
+            },
+            "class 2": {
+                "Chapter 1: More About Computers": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "A computer works very __________.",
+                            "answer": "fast"
+                        },
+                        {
+                            "question": "The physical parts of a computer are called __________.",
+                            "answer": "hardware"
+                        },
+                        {
+                            "question": "The set of instructions for the computer is called __________.",
+                            "answer": "software"
+                        },
+                        {
+                            "question": "A computer never gets __________.",
+                            "answer": "tired"
+                        },
+                        {
+                            "question": "We can draw and __________ on a computer.",
+                            "answer": "paint"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "A computer can make mistakes.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Hardware is the set of instructions.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We can listen to music on a computer.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A computer has a very small memory.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We can play games on a computer.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Monitor": "Hardware"
+                        },
+                        {
+                            "Game": "Software"
+                        },
+                        {
+                            "Speaker": "Output sound"
+                        },
+                        {
+                            "Microphone": "Input sound"
+                        },
+                        {
+                            "CPU": "Processes data"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which of these is a hardware?",
+                            "options": [
+                                "Music",
+                                "Keyboard",
+                                "Story",
+                                "Game"
+                            ],
+                            "answer": "Keyboard"
+                        },
+                        {
+                            "question": "Which of these is a software?",
+                            "options": [
+                                "Mouse",
+                                "Monitor",
+                                "Painting program",
+                                "CPU"
+                            ],
+                            "answer": "Painting program"
+                        },
+                        {
+                            "question": "What does a computer use to remember things?",
+                            "options": [
+                                "Memory",
+                                "Eyes",
+                                "Ears",
+                                "Hands"
+                            ],
+                            "answer": "Memory"
+                        },
+                        {
+                            "question": "Which part helps us to hear sound from the computer?",
+                            "options": [
+                                "Monitor",
+                                "Keyboard",
+                                "Mouse",
+                                "Speaker"
+                            ],
+                            "answer": "Speaker"
+                        },
+                        {
+                            "question": "Why is a computer useful?",
+                            "options": [
+                                "It is big and heavy",
+                                "It helps us learn and play",
+                                "It makes food",
+                                "It can fly"
+                            ],
+                            "answer": "It helps us learn and play"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is the difference between hardware and software?",
+                        "Name two input devices.",
+                        "Name two output devices.",
+                        "What are the uses of a computer?",
+                        "Why should we learn to use a computer?"
+                    ]
+                },
+                "Chapter 2: Using the Keyboard": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "The __________ key is used to type capital letters.",
+                            "answer": "shift"
+                        },
+                        {
+                            "question": "The __________ key removes letters to the left.",
+                            "answer": "backspace"
+                        },
+                        {
+                            "question": "The __________ keys move the cursor.",
+                            "answer": "arrow"
+                        },
+                        {
+                            "question": "The __________ key types capital letters continuously.",
+                            "answer": "caps lock"
+                        },
+                        {
+                            "question": "The __________ key removes letters to the right.",
+                            "answer": "delete"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "The Shift key is used to type symbols.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Backspace and Delete do the same work.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "There are two arrow keys.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The Caps Lock key is for typing numbers.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The Enter key is used to start a new line.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Shift": "Capital letters and symbols"
+                        },
+                        {
+                            "Caps Lock": "Locks capital letters"
+                        },
+                        {
+                            "Backspace": "Erases left"
+                        },
+                        {
+                            "Delete": "Erases right"
+                        },
+                        {
+                            "Arrow Keys": "Move up, down, left, right"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which key do you press to type a '%' sign?",
+                            "options": [
+                                "Spacebar",
+                                "Shift",
+                                "Enter",
+                                "Caps Lock"
+                            ],
+                            "answer": "Shift"
+                        },
+                        {
+                            "question": "You typed 'applle'. Which key will you use to remove the extra 'l'?",
+                            "options": [
+                                "Enter",
+                                "Backspace",
+                                "Caps Lock",
+                                "Shift"
+                            ],
+                            "answer": "Backspace"
+                        },
+                        {
+                            "question": "You want to type your name in ALL CAPS. Which key will you use?",
+                            "options": [
+                                "Shift",
+                                "Enter",
+                                "Caps Lock",
+                                "Spacebar"
+                            ],
+                            "answer": "Caps Lock"
+                        },
+                        {
+                            "question": "Which key will you press to go to the next line?",
+                            "options": [
+                                "Spacebar",
+                                "Enter",
+                                "Backspace",
+                                "Delete"
+                            ],
+                            "answer": "Enter"
+                        },
+                        {
+                            "question": "Which keys help you move in a game?",
+                            "options": [
+                                "Number Keys",
+                                "Alphabet Keys",
+                                "Arrow Keys",
+                                "Function Keys"
+                            ],
+                            "answer": "Arrow Keys"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is the difference between Backspace and Delete?",
+                        "What is the use of the Shift key?",
+                        "How does the Caps Lock key help?",
+                        "Name the four arrow keys.",
+                        "Why are special keys important?"
+                    ]
+                }
+            },
+            "class 3": {
+                "Chapter 1: Introduction to GUI": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "The small pictures on the screen are called __________.",
+                            "answer": "icons"
+                        },
+                        {
+                            "question": "The bar at the bottom of the screen is the __________.",
+                            "answer": "taskbar"
+                        },
+                        {
+                            "question": "The __________ button opens the start menu.",
+                            "answer": "start"
+                        },
+                        {
+                            "question": "The background of the screen is called the __________.",
+                            "answer": "desktop"
+                        },
+                        {
+                            "question": "Deleted files go to the __________.",
+                            "answer": "recycle bin"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "Icons are big pictures.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We can double-click an icon to open a program.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "The taskbar is at the top of the screen.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We can change the desktop background.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "The Recycle Bin is for new files.",
+                            "answer": "False"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Desktop": "Screen background"
+                        },
+                        {
+                            "Icon": "Small picture for a program"
+                        },
+                        {
+                            "Taskbar": "Shows open programs"
+                        },
+                        {
+                            "Start Button": "Lists all programs"
+                        },
+                        {
+                            "Recycle Bin": "Stores deleted files"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "What does GUI stand for?",
+                            "options": [
+                                "General User Input",
+                                "Graphical User Interface",
+                                "General Utility Icon",
+                                "Graphical Utility Input"
+                            ],
+                            "answer": "Graphical User Interface"
+                        },
+                        {
+                            "question": "How do you open a program?",
+                            "options": [
+                                "Single-Click its icon",
+                                "Double-Click its icon",
+                                "Right-Click its icon",
+                                "Shout at it"
+                            ],
+                            "answer": "Double-Click its icon"
+                        },
+                        {
+                            "question": "Where is the Start button usually found?",
+                            "options": [
+                                "On the keyboard",
+                                "On the desktop",
+                                "On the taskbar",
+                                "On the monitor"
+                            ],
+                            "answer": "On the taskbar"
+                        },
+                        {
+                            "question": "What is the use of the Recycle Bin?",
+                            "options": [
+                                "To store new games",
+                                "To throw away deleted files",
+                                "To listen to music",
+                                "To draw pictures"
+                            ],
+                            "answer": "To throw away deleted files"
+                        },
+                        {
+                            "question": "How can you see all programs on the computer?",
+                            "options": [
+                                "By looking at the desktop",
+                                "By clicking the Start button",
+                                "By right-clicking the mouse",
+                                "By pressing the Spacebar"
+                            ],
+                            "answer": "By clicking the Start button"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is an icon?",
+                        "What is the taskbar?",
+                        "What is the use of the Start button?",
+                        "What happens when you delete a file?",
+                        "Name any three parts of a GUI screen."
+                    ]
+                },
+                "Chapter 2: Fun with MS Paint": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "The __________ tool is used to draw freehand.",
+                            "answer": "pencil"
+                        },
+                        {
+                            "question": "The __________ tool is used to fill color in a shape.",
+                            "answer": "fill with color"
+                        },
+                        {
+                            "question": "The __________ tool is used to draw straight lines.",
+                            "answer": "line"
+                        },
+                        {
+                            "question": "The __________ tool is used to write text.",
+                            "answer": "text"
+                        },
+                        {
+                            "question": "The __________ tool is used to erase mistakes.",
+                            "answer": "eraser"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "The Brush tool is used to type words.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We can draw circles with the Oval tool.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "The Color Palette is for choosing colors.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "The Eraser tool makes drawings darker.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "We can save our painting.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Pencil": "Draw thin lines"
+                        },
+                        {
+                            "Eraser": "Remove colors"
+                        },
+                        {
+                            "Brush": "Draw thick lines"
+                        },
+                        {
+                            "Text Tool": "Add words to picture"
+                        },
+                        {
+                            "Fill with Color": "Color a closed shape"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which tool would you use to color the sun yellow?",
+                            "options": [
+                                "Pencil",
+                                "Fill with color",
+                                "Eraser",
+                                "Text"
+                            ],
+                            "answer": "Fill with color"
+                        },
+                        {
+                            "question": "How do you draw a red straight line?",
+                            "options": [
+                                "Use the Pencil tool",
+                                "Use the Line tool",
+                                "Use the Eraser tool",
+                                "Use the Text tool"
+                            ],
+                            "answer": "Use the Line tool"
+                        },
+                        {
+                            "question": "Which tool is used to correct a mistake?",
+                            "options": [
+                                "Brush",
+                                "Pencil",
+                                "Eraser",
+                                "Text"
+                            ],
+                            "answer": "Eraser"
+                        },
+                        {
+                            "question": "Where do you click to choose the color blue?",
+                            "options": [
+                                "On the taskbar",
+                                "On the color palette",
+                                "On the Start button",
+                                "On the desktop"
+                            ],
+                            "answer": "On the color palette"
+                        },
+                        {
+                            "question": "What should you do after finishing your drawing?",
+                            "options": [
+                                "Shut down the computer",
+                                "Save the file",
+                                "Delete the file",
+                                "Close without saving"
+                            ],
+                            "answer": "Save the file"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "Name any five tools in MS Paint.",
+                        "What is the use of the Color Palette?",
+                        "How is the Brush tool different from the Pencil tool?",
+                        "What is the function of the Text tool?",
+                        "Why is it important to save your work?"
+                    ]
+                }
+            },
+            "class 7": {
+                "Chapter 1: Computer Software and its Types": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "__________ is a set of instructions that tells the computer what to do.",
+                            "answer": "Software"
+                        },
+                        {
+                            "question": "__________ software controls and manages the hardware of the computer.",
+                            "answer": "System"
+                        },
+                        {
+                            "question": "Windows and Linux are examples of __________ software.",
+                            "answer": "Operating System"
+                        },
+                        {
+                            "question": "MS Word and Photoshop are examples of __________ software.",
+                            "answer": "Application"
+                        },
+                        {
+                            "question": "__________ is a type of software that is available for free and can be modified.",
+                            "answer": "Open Source"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "Software can be physically touched.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "An operating system is an example of application software.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Utility software is a type of system software.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Proprietary software is also called closed-source software.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "MS Paint is an example of system software.",
+                            "answer": "False"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Operating System": "Manages computer hardware and software"
+                        },
+                        {
+                            "Application Software": "Helps users perform specific tasks"
+                        },
+                        {
+                            "Utility Software": "Helps in maintenance of the computer"
+                        },
+                        {
+                            "Open Source Software": "Source code is available to all"
+                        },
+                        {
+                            "Proprietary Software": "Source code is not available to users"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which of the following is system software?",
+                            "options": [
+                                "MS Excel",
+                                "Windows 10",
+                                "Google Chrome",
+                                "VLC Media Player"
+                            ],
+                            "answer": "Windows 10"
+                        },
+                        {
+                            "question": "Which software is used to create and edit documents?",
+                            "options": [
+                                "MS Word",
+                                "Windows",
+                                "Antivirus",
+                                "Device Driver"
+                            ],
+                            "answer": "MS Word"
+                        },
+                        {
+                            "question": "Linux is an example of:",
+                            "options": [
+                                "Proprietary Software",
+                                "Open Source Software",
+                                "Application Software",
+                                "Utility Software"
+                            ],
+                            "answer": "Open Source Software"
+                        },
+                        {
+                            "question": "Which of the following is a utility software?",
+                            "options": [
+                                "Microsoft Windows",
+                                "Disk Cleanup",
+                                "MS PowerPoint",
+                                "Adobe Photoshop"
+                            ],
+                            "answer": "Disk Cleanup"
+                        },
+                        {
+                            "question": "The software that allows the operating system to communicate with hardware is called:",
+                            "options": [
+                                "Application Software",
+                                "Device Driver",
+                                "Utility Software",
+                                "Language Processor"
+                            ],
+                            "answer": "Device Driver"
                         }
                     ],
                     "Answer the Following": [
                         "What is software?",
-                        "What does the CPU do?",
-                        "How do we use a printer?",
-                        "What does a scanner do?",
-                        "Are computers fast or slow?"
+                        "Differentiate between system software and application software.",
+                        "What is an operating system? Give two examples.",
+                        "What is utility software? Give two examples.",
+                        "What is the difference between open source and proprietary software?"
                     ],
                     "Full Form": [
-                        "CPU",
-                        "CD",
-                        "GPS"
-                    ]
-                },
-                "Chapter 3": {
-                    "Fill in the Blanks": [
                         {
-                            "question": "Computers use ___ to connect to the internet.",
-                            "answer": "modem"
+                            "OS": "Operating System"
                         },
                         {
-                            "question": "The internet helps us to ___ information.",
-                            "answer": "find"
+                            "OSS": "Open Source Software"
                         },
                         {
-                            "question": "We use browsers to ___ websites.",
-                            "answer": "browse"
+                            "GUI": "Graphical User Interface"
                         },
-                        {
-                            "question": "Emails are sent using ___.",
-                            "answer": "SMTP"
-                        },
-                        {
-                            "question": "waefihqwe",
-                            "answer": "ok"
-                        }
-                    ],
-                    "True/False": [
-                        "The internet connects computers worldwide. (True)",
-                        "We cannot use the internet to learn. (False)",
-                        "Browsers open websites. (True)",
-                        "Emails are letters sent by post. (False)",
-                        "Wi-Fi is a wireless connection. (True)"
-                    ],
-                    "Match the Following": [
-                        {
-                            "Internet": "Global network"
-                        },
-                        {
-                            "Browser": "Website viewer"
-                        },
-                        {
-                            "Email": "Electronic mail"
-                        },
-                        {
-                            "Wi-Fi": "Wireless connection"
-                        },
-                        {
-                            "Website": "Online page"
-                        }
-                    ],
-                    "Answer the Following": [
-                        "What is the internet?",
-                        "How does the internet help us?",
-                        "What does a browser do?",
-                        "What is an email?",
-                        "What is Wi-Fi?"
-                    ]
-                },
-                "Chapter 4": {
-                    "Fill in the Blanks": [
-                        "A file stores ___ on a computer.",
-                        "We save work on the ___ drive.",
-                        "The desktop shows ___ files and folders.",
-                        "Icons help us to ___ programs.",
-                        "We can delete files to ___ space.",
-                        {
-                            "question": "nice..............",
-                            "answer": "bibhuti"
-                        }
-                    ],
-                    "True/False": [
-                        "Files contain data. (True)",
-                        "The desktop is a physical table. (False)",
-                        "Icons open programs. (True)",
-                        "Deleting files saves storage. (True)",
-                        "We cannot save work on a computer. (False)"
-                    ],
-                    "Match the Following": [
-                        {
-                            "File": "Stores data"
-                        },
-                        {
-                            "Desktop": "Main screen"
-                        },
-                        {
-                            "Icon": "Program shortcut"
-                        },
-                        {
-                            "Delete": "Remove files"
-                        },
-                        {
-                            "Drive": "Storage device"
-                        }
-                    ],
-                    "Answer the Following": [
-                        "What is a file?",
-                        "Where do we save our work?",
-                        "What is shown on the desktop?",
-                        "What do icons do?",
-                        "Why delete files?"
-                    ]
-                },
-                "Chapter 5": {
-                    "Fill in the Blanks": [
-                        "A virus can ___ a computer.",
-                        "Antivirus software helps to ___ viruses.",
-                        "Passwords keep our data ___.",
-                        "We should not share ___ with strangers.",
-                        "Backing up data keeps it ___."
-                    ],
-                    "True/False": [
-                        "Viruses are harmful programs. (True)",
-                        "Antivirus removes viruses. (True)",
-                        "Passwords protect privacy. (True)",
-                        "It is safe to share passwords with anyone. (False)",
-                        "Backing up data is a good habit. (True)"
-                    ],
-                    "Match the Following": [
-                        {
-                            "Virus": "Harmful software"
-                        },
-                        {
-                            "Antivirus": "Protects computer"
-                        },
-                        {
-                            "Password": "Keeps data safe"
-                        },
-                        {
-                            "Backup": "Copies data"
-                        },
-                        {
-                            "Data": "Information"
-                        }
-                    ],
-                    "Answer the Following": [
-                        "What is a computer virus?",
-                        "How does antivirus help?",
-                        "Why use passwords?",
-                        "Should we share passwords?",
-                        "What is data backup?"
-                    ]
-                },
-                "Chapter 1": {
-                    "Fill in the Blanks": [
-                        "The keyboard is used to ___ data.",
-                        "A mouse helps to ___ on the screen.",
-                        "The monitor shows ___.",
-                        {
-                            "question": "bipin____",
-                            "answer": "ok"
-                        }
-                    ],
-                    "True/False": [
-                        "A computer can do calculations. (True)",
-                        "A mouse is used to type. (False)",
-                        "The monitor displays pictures and text. (True)",
-                        "Computers cannot store data. (False)",
-                        "The keyboard is an input device. (True)"
-                    ],
-                    "Match the Following": [
-                        {
-                            "Keyboard": "Input device"
-                        },
-                        {
-                            "Monitor": "Output device"
-                        },
-                        {
-                            "Mouse": "Pointing device"
-                        },
-                        {
-                            "CPU": "Brain of computer"
-                        },
-                        {
-                            "Printer": "Prints documents"
-                        }
-                    ],
-                    "Answer the Following": [
-                        "What does a keyboard do?",
-                        "How do you use a mouse?",
-                        "What does the monitor show?",
-                        "Where does the computer store data?"
-                    ],
-                    "Full Form": [
                         {
                             "CPU": "Central Processing Unit"
                         },
                         {
                             "RAM": "Random Access Memory"
-                        },
-                        {
-                            "USB": "Universal Serial Bus"
-                        },
-                        {
-                            "PDF": "Portable Document Format"
-                        },
-                        {
-                            "HTML": "HyperText Markup Language"
-                        }
-                    ]
-                }
-            },
-            "class 5": {
-                "Chapter 1": {}
-            }
-        },
-        "english": {
-            "class 1": {
-                "Chapter 1": {}
-            }
-        }
-    },
-    "saraswati school": {
-        "s": {
-            "3": {
-                "chapter 1": {
-                    "True/False": [
-                        {
-                            "question": "oooooooo",
-                            "answer": "oooooooo"
-                        },
-                        {
-                            "question": "Bibhuti is a coder.",
-                            "answer": "true"
-                        },
-                        {
-                            "question": "mouse is input device",
-                            "answer": "True"
-                        },
-                        {
-                            "question": "mouse is input device",
-                            "answer": "True"
-                        },
-                        {
-                            "question": "mouse is an output device.",
-                            "answer": "False"
                         }
                     ],
+                    "One Word Answer": [
+                        "Software that acts as an interface between the user and the computer hardware.",
+                        "A type of software used for specific tasks like word processing.",
+                        "Software that is available for free and can be modified by anyone.",
+                        "Software that helps in managing, maintaining, and controlling computer resources.",
+                        "A type of system software that helps OS communicate with hardware devices."
+                    ],
+                    "Short Answer": [
+                        "What are the main types of software?",
+                        "Give two examples of open source software.",
+                        "What is the role of an operating system?",
+                        "Why is application software important?",
+                        "What is the difference between a compiler and an interpreter?"
+                    ],
+                    "Long Answer": [
+                        "Explain the different types of system software with examples.",
+                        "What is application software? Explain its various types with examples.",
+                        "Differentiate between open source and proprietary software. Write advantages of each.",
+                        "Explain the role of utility software in computer system.",
+                        "What is an operating system? Explain its various functions in detail."
+                    ]
+                },
+                "Chapter 2: Introduction to Python Programming": {
                     "Fill in the Blanks": [
                         {
-                            "question": "srghsrt",
-                            "answer": "fghbf"
+                            "question": "Python is a __________ level programming language.",
+                            "answer": "high"
                         },
                         {
-                            "question": "ghjmnhg",
-                            "answer": "ghj"
+                            "question": "In Python, we use the __________ function to display output.",
+                            "answer": "print"
+                        },
+                        {
+                            "question": "The __________ statement is used to make decisions in Python.",
+                            "answer": "if"
+                        },
+                        {
+                            "question": "In Python, __________ are used to store multiple items in a single variable.",
+                            "answer": "lists"
+                        },
+                        {
+                            "question": "The __________ loop is used to iterate over a sequence in Python.",
+                            "answer": "for"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "Python uses curly braces {} to define code blocks.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "In Python, variables don't need to be declared with a data type.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "The input() function always returns a string.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Python is case-sensitive language.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "Lists in Python are immutable.",
+                            "answer": "False"
                         }
                     ],
                     "Match the Following": [
                         {
-                            "factory": "monitor"
+                            "print()": "Displays output"
                         },
                         {
-                            "computer": "electronic device"
+                            "input()": "Takes user input"
                         },
                         {
-                            "tv": "television"
+                            "if-else": "Decision making"
+                        },
+                        {
+                            "for loop": "Iteration over sequence"
+                        },
+                        {
+                            "list": "Mutable sequence"
                         }
                     ],
                     "Choose the Best Answer": [
                         {
-                            "question": "fggggg",
+                            "question": "Which of the following is the correct way to comment in Python?",
                             "options": [
-                                "lsdfk",
-                                "sah",
-                                "mukhiya",
-                                "were"
+                                "// comment",
+                                "/* comment */",
+                                "# comment",
+                                "<!-- comment -->"
                             ],
-                            "answer": "ertger"
+                            "answer": "# comment"
+                        },
+                        {
+                            "question": "What will be the output of print(2**3)?",
+                            "options": [
+                                "6",
+                                "8",
+                                "23",
+                                "5"
+                            ],
+                            "answer": "8"
+                        },
+                        {
+                            "question": "Which function is used to get input from user in Python?",
+                            "options": [
+                                "scan()",
+                                "input()",
+                                "get()",
+                                "read()"
+                            ],
+                            "answer": "input()"
+                        },
+                        {
+                            "question": "Which of the following is a valid variable name in Python?",
+                            "options": [
+                                "1st_number",
+                                "first-number",
+                                "first_number",
+                                "first number"
+                            ],
+                            "answer": "first_number"
+                        },
+                        {
+                            "question": "What does the len() function do?",
+                            "options": [
+                                "Converts to lowercase",
+                                "Returns length of sequence",
+                                "Rounds a number",
+                                "Calculates logarithm"
+                            ],
+                            "answer": "Returns length of sequence"
                         }
+                    ],
+                    "Answer the Following": [
+                        "What is Python? Why is it popular?",
+                        "What are variables in Python?",
+                        "What are the different data types in Python?",
+                        "What is the difference between = and == in Python?",
+                        "What are loops? Name the types of loops in Python."
+                    ],
+                    "Full Form": [
+                        {
+                            "IDLE": "Integrated Development and Learning Environment"
+                        },
+                        {
+                            "GUI": "Graphical User Interface"
+                        },
+                        {
+                            "IDE": "Integrated Development Environment"
+                        },
+                        {
+                            "CPU": "Central Processing Unit"
+                        },
+                        {
+                            "RAM": "Random Access Memory"
+                        }
+                    ],
+                    "One Word Answer": [
+                        "Function used to display output in Python.",
+                        "Data type used to store whole numbers.",
+                        "Statement used for decision making in Python.",
+                        "Loop used when we know the number of iterations.",
+                        "Character used for single line comments in Python."
+                    ],
+                    "Short Answer": [
+                        "What are the advantages of Python programming?",
+                        "Explain different operators in Python.",
+                        "What are conditional statements? Give syntax of if statement.",
+                        "What are lists in Python? How are they different from tuples?",
+                        "What is the purpose of comments in programming?"
+                    ],
+                    "Long Answer": [
+                        "Explain the features of Python programming language.",
+                        "What are variables and data types in Python? Explain with examples.",
+                        "Explain conditional statements in Python with proper syntax and examples.",
+                        "What are loops in Python? Explain for loop and while loop with examples.",
+                        "What are lists and tuples in Python? Explain with examples and differences."
+                    ]
+                },
+                "Chapter 3: Computer Networks": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "A __________ is a collection of interconnected computers.",
+                            "answer": "network"
+                        },
+                        {
+                            "question": "__________ is the arrangement of computers in a network.",
+                            "answer": "Topology"
+                        },
+                        {
+                            "question": "LAN stands for __________.",
+                            "answer": "Local Area Network"
+                        },
+                        {
+                            "question": "__________ is a device that connects multiple computers in a network.",
+                            "answer": "Switch"
+                        },
+                        {
+                            "question": "__________ is the unique identifier of a computer on a network.",
+                            "answer": "IP Address"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "LAN covers a large geographical area.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Wi-Fi uses radio waves for communication.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "A hub is more intelligent than a switch.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The Internet is an example of WAN.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "MAC address is same as IP address.",
+                            "answer": "False"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "LAN": "Small geographical area"
+                        },
+                        {
+                            "WAN": "Large geographical area"
+                        },
+                        {
+                            "Router": "Connects different networks"
+                        },
+                        {
+                            "Switch": "Connects devices in LAN"
+                        },
+                        {
+                            "Modem": "Converts digital to analog signals"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which network covers a city?",
+                            "options": [
+                                "LAN",
+                                "MAN",
+                                "WAN",
+                                "PAN"
+                            ],
+                            "answer": "MAN"
+                        },
+                        {
+                            "question": "Which device is used to connect to the Internet?",
+                            "options": [
+                                "Switch",
+                                "Hub",
+                                "Modem",
+                                "Router"
+                            ],
+                            "answer": "Modem"
+                        },
+                        {
+                            "question": "Which topology has a central node?",
+                            "options": [
+                                "Bus",
+                                "Star",
+                                "Ring",
+                                "Mesh"
+                            ],
+                            "answer": "Star"
+                        },
+                        {
+                            "question": "What does HTTP stand for?",
+                            "options": [
+                                "Hyper Text Transfer Protocol",
+                                "High Text Transfer Program",
+                                "Hyper Transfer Text Protocol",
+                                "High Transfer Text Program"
+                            ],
+                            "answer": "Hyper Text Transfer Protocol"
+                        },
+                        {
+                            "question": "Which is a wireless technology?",
+                            "options": [
+                                "Ethernet",
+                                "Wi-Fi",
+                                "USB",
+                                "HDMI"
+                            ],
+                            "answer": "Wi-Fi"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is a computer network?",
+                        "What are the advantages of computer networks?",
+                        "Differentiate between LAN and WAN.",
+                        "What is network topology? Name any three types.",
+                        "What is the difference between hub and switch?"
+                    ],
+                    "Full Form": [
+                        {
+                            "LAN": "Local Area Network"
+                        },
+                        {
+                            "WAN": "Wide Area Network"
+                        },
+                        {
+                            "MAN": "Metropolitan Area Network"
+                        },
+                        {
+                            "PAN": "Personal Area Network"
+                        },
+                        {
+                            "HTTP": "Hyper Text Transfer Protocol"
+                        }
+                    ],
+                    "One Word Answer": [
+                        "Network that connects computers in a building.",
+                        "Device that connects multiple networks.",
+                        "Most common wired network technology.",
+                        "Wireless networking technology.",
+                        "Unique number assigned to each device on network."
+                    ],
+                    "Short Answer": [
+                        "What are the different types of computer networks?",
+                        "Explain star topology with diagram.",
+                        "What are network devices? Name any three.",
+                        "What is the Internet?",
+                        "What are protocols? Give two examples."
+                    ],
+                    "Long Answer": [
+                        "Explain different types of computer networks with examples.",
+                        "What is network topology? Explain any three types with diagrams.",
+                        "Explain various network devices and their functions.",
+                        "What is the Internet? Explain its uses and importance.",
+                        "What are protocols? Explain HTTP, FTP, and TCP/IP in detail."
+                    ]
+                },
+                "Chapter 4: Cyber Safety": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "__________ means staying safe in the digital world.",
+                            "answer": "Cyber safety"
+                        },
+                        {
+                            "question": "A __________ is a malicious software that can harm your computer.",
+                            "answer": "virus"
+                        },
+                        {
+                            "question": "__________ is the practice of protecting systems from digital attacks.",
+                            "answer": "Cybersecurity"
+                        },
+                        {
+                            "question": "You should never share your __________ with anyone.",
+                            "answer": "password"
+                        },
+                        {
+                            "question": "__________ is a type of online fraud where attackers pretend to be legitimate organizations.",
+                            "answer": "Phishing"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "It is safe to use public Wi-Fi for online banking.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "You should use the same password for all your accounts.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "Antivirus software helps protect against malware.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "It is safe to download software from unknown websites.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "You should always log out after using public computers.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "Virus": "Malicious software"
+                        },
+                        {
+                            "Firewall": "Network security system"
+                        },
+                        {
+                            "Phishing": "Email fraud"
+                        },
+                        {
+                            "Antivirus": "Protects from malware"
+                        },
+                        {
+                            "Password": "Secret word for access"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which of these is a strong password?",
+                            "options": [
+                                "password",
+                                "123456",
+                                "John2008!",
+                                "john"
+                            ],
+                            "answer": "John2008!"
+                        },
+                        {
+                            "question": "What should you do if you receive a suspicious email?",
+                            "options": [
+                                "Reply to it",
+                                "Delete it",
+                                "Forward it to friends",
+                                "Click on links in it"
+                            ],
+                            "answer": "Delete it"
+                        },
+                        {
+                            "question": "Which of these is NOT a type of malware?",
+                            "options": [
+                                "Virus",
+                                "Antivirus",
+                                "Worm",
+                                "Trojan"
+                            ],
+                            "answer": "Antivirus"
+                        },
+                        {
+                            "question": "What does HTTPS indicate?",
+                            "options": [
+                                "The website is fast",
+                                "The connection is secure",
+                                "The website is free",
+                                "The website has videos"
+                            ],
+                            "answer": "The connection is secure"
+                        },
+                        {
+                            "question": "Which of these is a cyber safety rule?",
+                            "options": [
+                                "Share passwords with friends",
+                                "Use weak passwords",
+                                "Keep software updated",
+                                "Open emails from unknown senders"
+                            ],
+                            "answer": "Keep software updated"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is cyber safety?",
+                        "What are the dangers of sharing personal information online?",
+                        "What is malware? Name different types.",
+                        "What is phishing?",
+                        "Why is it important to use strong passwords?"
+                    ],
+                    "Full Form": [
+                        {
+                            "VPN": "Virtual Private Network"
+                        },
+                        {
+                            "HTTPS": "Hyper Text Transfer Protocol Secure"
+                        },
+                        {
+                            "URL": "Uniform Resource Locator"
+                        },
+                        {
+                            "ISP": "Internet Service Provider"
+                        },
+                        {
+                            "FAQ": "Frequently Asked Questions"
+                        }
+                    ],
+                    "One Word Answer": [
+                        "Malicious software designed to harm computers.",
+                        "Practice of protecting systems from digital attacks.",
+                        "Fraudulent attempt to obtain sensitive information.",
+                        "Secret word used for authentication.",
+                        "Network security system that monitors traffic."
+                    ],
+                    "Short Answer": [
+                        "What are the basic rules of cyber safety?",
+                        "How can you create a strong password?",
+                        "What is the difference between virus and worm?",
+                        "Why should you be careful on social media?",
+                        "What precautions should you take while using public Wi-Fi?"
+                    ],
+                    "Long Answer": [
+                        "What is cyber safety? Explain its importance in today's digital world.",
+                        "Explain different types of cyber threats with examples.",
+                        "What are the do's and don'ts of cyber safety? Explain in detail.",
+                        "Explain the role of antivirus and firewall in cybersecurity.",
+                        "What is social media safety? What precautions should students take while using social media?"
+                    ]
+                },
+                "Chapter 5: HTML Basics": {
+                    "Fill in the Blanks": [
+                        {
+                            "question": "HTML stands for __________.",
+                            "answer": "Hyper Text Markup Language"
+                        },
+                        {
+                            "question": "HTML documents are saved with __________ extension.",
+                            "answer": ".html"
+                        },
+                        {
+                            "question": "The __________ tag is used to create the largest heading.",
+                            "answer": "<h1>"
+                        },
+                        {
+                            "question": "The __________ tag is used to create a paragraph.",
+                            "answer": "<p>"
+                        },
+                        {
+                            "question": "The __________ attribute is used to specify the source of an image.",
+                            "answer": "src"
+                        }
+                    ],
+                    "True/False": [
+                        {
+                            "question": "HTML is a programming language.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "All HTML tags must be closed.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The <br> tag is used to create a line break.",
+                            "answer": "True"
+                        },
+                        {
+                            "question": "HTML is case-sensitive.",
+                            "answer": "False"
+                        },
+                        {
+                            "question": "The <body> tag contains the main content of the webpage.",
+                            "answer": "True"
+                        }
+                    ],
+                    "Match the Following": [
+                        {
+                            "<html>": "Root element of HTML page"
+                        },
+                        {
+                            "<head>": "Contains meta information"
+                        },
+                        {
+                            "<title>": "Specifies page title"
+                        },
+                        {
+                            "<body>": "Contains visible content"
+                        },
+                        {
+                            "<img>": "Inserts an image"
+                        }
+                    ],
+                    "Choose the Best Answer": [
+                        {
+                            "question": "Which tag is used to create a hyperlink?",
+                            "options": [
+                                "<link>",
+                                "<a>",
+                                "<href>",
+                                "<hyper>"
+                            ],
+                            "answer": "<a>"
+                        },
+                        {
+                            "question": "Which tag is used to create an ordered list?",
+                            "options": [
+                                "<ul>",
+                                "<ol>",
+                                "<li>",
+                                "<list>"
+                            ],
+                            "answer": "<ol>"
+                        },
+                        {
+                            "question": "Which attribute is used with <a> tag to specify the link address?",
+                            "options": [
+                                "src",
+                                "link",
+                                "href",
+                                "url"
+                            ],
+                            "answer": "href"
+                        },
+                        {
+                            "question": "Which tag is used to make text bold?",
+                            "options": [
+                                "<bold>",
+                                "<strong>",
+                                "<b>",
+                                "Both B and C"
+                            ],
+                            "answer": "Both B and C"
+                        },
+                        {
+                            "question": "Which tag is used to insert a horizontal line?",
+                            "options": [
+                                "<line>",
+                                "<hr>",
+                                "<br>",
+                                "<horizontal>"
+                            ],
+                            "answer": "<hr>"
+                        }
+                    ],
+                    "Answer the Following": [
+                        "What is HTML?",
+                        "What are the basic structure of an HTML document?",
+                        "What is the difference between <ul> and <ol> tags?",
+                        "What are attributes in HTML?",
+                        "How do you insert an image in HTML?"
+                    ],
+                    "Full Form": [
+                        {
+                            "HTML": "Hyper Text Markup Language"
+                        },
+                        {
+                            "CSS": "Cascading Style Sheets"
+                        },
+                        {
+                            "URL": "Uniform Resource Locator"
+                        },
+                        {
+                            "HTTP": "Hyper Text Transfer Protocol"
+                        },
+                        {
+                            "WWW": "World Wide Web"
+                        }
+                    ],
+                    "One Word Answer": [
+                        "Language used to create web pages.",
+                        "Container for HTML metadata.",
+                        "Tag used to create the smallest heading.",
+                        "Tag used to create a line break.",
+                        "Attribute used to provide alternative text for images."
+                    ],
+                    "Short Answer": [
+                        "What are the basic tags used in HTML?",
+                        "How do you create lists in HTML?",
+                        "What is the difference between <b> and <strong> tags?",
+                        "How do you create a table in HTML?",
+                        "What is the purpose of comments in HTML?"
+                    ],
+                    "Long Answer": [
+                        "Explain the basic structure of an HTML document with example.",
+                        "What are different types of lists in HTML? Explain with examples.",
+                        "Explain various text formatting tags in HTML with examples.",
+                        "How do you create links and insert images in HTML? Explain with examples.",
+                        "What is the difference between HTML elements and attributes? Explain with examples."
                     ]
                 }
             }
         }
     },
-    "mit ": {
-        "s": {
-            "class 8": {
-                "Chapter 1": {}
-            }
-        },
-        "english": {
-            "Class 3": {
-                "Chapter 1": {}
-            },
+    "demo pvt. ltd": {
+        "demo": {
             "class 1": {
-                "Chapter 2": {}
+                "Chapter 1: demo": {
+                    "Match the Following": [
+                        {
+                            "Virus": "Malicious software"
+                        }
+                    ],
+                    "Choose the Best Answer": [],
+                    "Full Form": [],
+                    "One Word Answer": [],
+                    "Long Answer": [
+                        "What is cyber safety? Explain its importance in today's digital world."
+                    ]
+                }
             }
         }
     }
