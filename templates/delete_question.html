@@ -3,15 +3,19 @@
 {% block title %}Delete Question{% endblock %}
 
 {% block content %}
-<div class="max-w-6xl mx-auto bg-white shadow-lg rounded-2xl p-8 mt-10">
-  <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center gap-2">
-    <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
-    </svg>
-    Delete Individual Question
-  </h2>
+<div class="max-w-2xl mx-auto bg-white rounded-lg border border-gray-200 mt-6">
+  <!-- Header -->
+  <div class="bg-red-50 border-b border-red-200 p-4 rounded-t-lg">
+    <div class="flex items-center gap-2">
+      <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+      </svg>
+      <h2 class="text-lg font-semibold text-gray-800">Delete Question</h2>
+    </div>
+    <p class="text-sm text-gray-600 mt-1">Select and delete a specific question</p>
+  </div>
 
-  <form method="POST" action="{{ url_for('delete_question') }}" class="space-y-5">
+  <form method="POST" action="{{ url_for('delete_question') }}" class="p-6 space-y-4">
     <!-- Hidden field to store question index -->
     <input type="hidden" name="question_index" id="question_index" value="">
 
@@ -19,8 +23,8 @@
     <div>
       <label for="publication" class="block text-sm font-medium text-gray-700 mb-1">Publication</label>
       <select name="publication" id="publication" onchange="loadSubjects()" required
-        class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200">
-        <option value="" disabled selected>--Select Publication--</option>
+        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-red-500 focus:border-red-500">
+        <option value="" disabled selected>Select publication</option>
         {% for pub in publications %}
           <option value="{{ pub }}">{{ pub }}</option>
         {% endfor %}
@@ -31,8 +35,8 @@
     <div>
       <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
       <select name="subject" id="subject" onchange="loadClasses()" required disabled
-        class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 bg-gray-50">
-        <option value="" disabled selected>--Select Subject--</option>
+        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-gray-50">
+        <option value="" disabled selected>Select subject</option>
       </select>
     </div>
 
@@ -40,8 +44,8 @@
     <div>
       <label for="class" class="block text-sm font-medium text-gray-700 mb-1">Class</label>
       <select name="class_name" id="class" onchange="loadChapters()" required disabled
-        class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 bg-gray-50">
-        <option value="" disabled selected>--Select Class--</option>
+        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-gray-50">
+        <option value="" disabled selected>Select class</option>
       </select>
     </div>
 
@@ -49,8 +53,8 @@
     <div>
       <label for="chapter" class="block text-sm font-medium text-gray-700 mb-1">Chapter</label>
       <select name="chapter" id="chapter" onchange="loadQtypes()" required disabled
-        class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 bg-gray-50">
-        <option value="" disabled selected>--Select Chapter--</option>
+        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-gray-50">
+        <option value="" disabled selected>Select chapter</option>
       </select>
     </div>
 
@@ -58,41 +62,41 @@
     <div>
       <label for="qtype" class="block text-sm font-medium text-gray-700 mb-1">Question Type</label>
       <select name="qtype" id="qtype" onchange="loadQuestions()" required disabled
-        class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 bg-gray-50">
-        <option value="" disabled selected>--Select Question Type--</option>
+        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-gray-50">
+        <option value="" disabled selected>Select question type</option>
       </select>
     </div>
 
     <!-- Individual Question Selection -->
     <div>
-      <label for="old_question" class="block text-sm font-medium text-gray-700 mb-1">Select Question to Delete</label>
+      <label for="old_question" class="block text-sm font-medium text-gray-700 mb-1">Question to Delete</label>
       <select name="old_question" id="old_question" onchange="updateQuestionIndex()" required disabled
-        class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 bg-gray-50">
-        <option value="" disabled selected>--Select Question--</option>
+        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-gray-50">
+        <option value="" disabled selected>Select question</option>
       </select>
     </div>
 
     <!-- Question Preview -->
-    <div id="question-preview" class="hidden p-4 bg-gray-50 border border-gray-200 rounded-xl">
-      <h3 class="text-sm font-medium text-gray-700 mb-2">Question Preview:</h3>
+    <div id="question-preview" class="hidden p-3 bg-gray-50 border border-gray-200 rounded-md">
+      <h3 class="text-sm font-medium text-gray-700 mb-2">Preview:</h3>
       <div id="preview-content" class="text-gray-600 text-sm"></div>
     </div>
 
     <!-- Warning Message -->
-    <div id="warning-message" class="hidden p-4 bg-red-50 border border-red-200 rounded-xl">
+    <div id="warning-message" class="hidden p-3 bg-red-50 border border-red-200 rounded-md">
       <div class="flex items-center">
-        <svg class="w-5 h-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-4 h-4 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
         </svg>
-        <span class="text-red-700 font-medium">Warning: This action cannot be undone!</span>
+        <span class="text-red-700 text-sm">This action cannot be undone</span>
       </div>
     </div>
 
     <!-- Submit Button -->
-    <div class="pt-4">
+    <div class="pt-2">
       <button type="submit" id="delete-btn" disabled
-        class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 rounded-xl shadow-md transition-all duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed">
-        Delete This Question
+        class="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2 rounded-md transition-colors disabled:bg-red-400 disabled:cursor-not-allowed">
+        Delete Question
       </button>
     </div>
   </form>
@@ -109,7 +113,6 @@
     const select = document.getElementById(selectId);
     select.disabled = false;
     select.classList.remove('bg-gray-50');
-    select.classList.add('bg-white');
   }
 
   function disableSelect(selectId) {
@@ -117,7 +120,6 @@
     select.disabled = true;
     select.innerHTML = '<option value="" disabled selected>--Select--</option>';
     select.classList.add('bg-gray-50');
-    select.classList.remove('bg-white');
   }
 
   function resetDependentFields(startFrom) {
@@ -138,7 +140,7 @@
   function loadSubjects() {
     const pub = document.getElementById("publication").value;
     const subjects = pub ? Object.keys(jsonData[pub]) : [];
-    let html = '<option value="" disabled selected>--Select Subject--</option>';
+    let html = '<option value="" disabled selected>Select subject</option>';
     subjects.forEach(s => html += `<option value="${s}">${s}</option>`);
     document.getElementById("subject").innerHTML = html;
     
@@ -150,7 +152,7 @@
     const pub = document.getElementById("publication").value;
     const sub = document.getElementById("subject").value;
     const classes = (pub && sub) ? Object.keys(jsonData[pub][sub]) : [];
-    let html = '<option value="" disabled selected>--Select Class--</option>';
+    let html = '<option value="" disabled selected>Select class</option>';
     classes.forEach(c => html += `<option value="${c}">${c}</option>`);
     document.getElementById("class").innerHTML = html;
     
@@ -163,7 +165,7 @@
     const sub = document.getElementById("subject").value;
     const cls = document.getElementById("class").value;
     const chapters = (pub && sub && cls) ? Object.keys(jsonData[pub][sub][cls]) : [];
-    let html = '<option value="" disabled selected>--Select Chapter--</option>';
+    let html = '<option value="" disabled selected>Select chapter</option>';
     chapters.forEach(ch => html += `<option value="${ch}">${ch}</option>`);
     document.getElementById("chapter").innerHTML = html;
     
@@ -177,7 +179,7 @@
     const cls = document.getElementById("class").value;
     const ch = document.getElementById("chapter").value;
     const qtypes = (pub && sub && cls && ch) ? Object.keys(jsonData[pub][sub][cls][ch]) : [];
-    let html = '<option value="" disabled selected>--Select Question Type--</option>';
+    let html = '<option value="" disabled selected>Select question type</option>';
     qtypes.forEach(qt => html += `<option value="${qt}">${qt}</option>`);
     document.getElementById("qtype").innerHTML = html;
     
@@ -193,7 +195,7 @@
     const qt = document.getElementById("qtype").value;
     
     currentQuestions = (pub && sub && cls && ch && qt) ? jsonData[pub][sub][cls][ch][qt] : [];
-    let html = '<option value="" disabled selected>--Select Question--</option>';
+    let html = '<option value="" disabled selected>Select question</option>';
 
     if (currentQuestions.length === 0) {
       html = '<option value="" disabled selected>No questions found</option>';
@@ -318,7 +320,7 @@
     
     if (selectedIndex && selectedIndex !== '') {
       const questionText = document.getElementById("old_question").options[document.getElementById("old_question").selectedIndex].text;
-      if (!confirm(`Are you sure you want to delete this individual question?\n\n"${questionText}"\n\nThis will remove only this specific question, not the entire question type.`)) {
+      if (!confirm(`Are you sure you want to delete this question?\n\n"${questionText}"`)) {
         e.preventDefault();
       }
     } else {
@@ -332,15 +334,4 @@
     resetDependentFields('publication');
   });
 </script>
-
-<style>
-  select:focus {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
-  }
-  
-  select {
-    transition: all 0.2s ease;
-  }
-</style>
 {% endblock %}
