@@ -47,6 +47,9 @@ if i added new cateory then shoul be show in question types
     # Add uv buildpack
     heroku buildpacks:add https://github.com/moneymeets/python-uv-buildpack
 
+    # Add PostgreSQL database
+    heroku addons:create heroku-postgresql:hobby-dev
+
     # Push code to Heroku
     git push heroku main
 
