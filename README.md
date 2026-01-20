@@ -13,4 +13,10 @@ add question and add cateory is connected
 
 if i added new cateory then shoul be show in question types
 
+#web: gunicorn app:app
 
+# Add gunicorn (production web server)
+uv add gunicorn
+
+# Export dependencies to requirements.txt
+uv export --format requirements-txt > requirements.txt
